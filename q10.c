@@ -56,5 +56,7 @@ int main(void) {
         } else {
             printf("  EtherType 0x%04x\n", ethertype);
         }
+
+        if (count >= 10) break;
     }
 }
