@@ -1,4 +1,4 @@
-# Algorithms - Socket Programming Experiments (q5 - q10)
+# Algorithms - Networking Lab Experiments (q5 - q17)
 
 All experiments are single C files containing both the server and the
 client. Run the file without arguments for the server and with the word
@@ -100,3 +100,60 @@ client. Run the file without arguments for the server and with the word
    header and prints the source and destination port numbers.
 6. Each captured frame is printed with a packet counter and its length;
    the program keeps capturing until stopped with Ctrl+C.
+
+## Q11 - Familiarizing router commands
+
+1. Use Cisco Packet Tracer to set up a basic router environment.
+2. Execute commands to switch between user mode and privileged EXEC mode.
+3. Enter global configuration mode to modify system settings.
+4. Use `show` commands to inspect router hardware, OS version, memory, and interface status.
+5. Examine the routing table and check configured routing protocols.
+6. Save the current running configuration to NVRAM.
+7. Review command history, the system clock, and the host list.
+8. Inspect interface statistics and determine if the controller is DTE or DCE.
+9. Configure serial and ethernet interfaces by assigning IP addresses, masks, and clock rates.
+
+## Q12 - Static routing configuration
+
+1. Construct the network topology consisting of three routers (2621, 2501A, 2501B) and connected networks.
+2. Manually define static routes on each router to ensure every network is reachable.
+3. Verify the entries in the routing table using `show ip route`.
+4. Test connectivity between remote hosts using `ping`.
+
+## Q13 - RIPv2 routing implementation
+
+1. Construct the network topology consisting of three routers (2621, 2501A, 2501B) and connected networks.
+2. Enable RIP version 2 on all routers and specify the networks to be advertised.
+3. Allow the routers to exchange updates and populate their routing tables dynamically.
+4. Verify the RIPv2 routes in the routing table and test connectivity with `ping`.
+
+## Q14 - OSPF routing implementation
+
+1. Construct the network topology consisting of three routers (2621, 2501A, 2501B) and connected networks.
+2. Enable OSPF on all routers, defining the process ID and network areas.
+3. Verify the formation of OSPF adjacencies and the population of the routing table.
+4. Test end-to-end connectivity between hosts using `ping`.
+
+## Q15 - Access Control Lists for Host Isolation
+
+1. Set up a campus network topology with multiple switches and hosts.
+2. Create a standard or extended ACL to permit traffic from Host_B to the 172.16.10.0 network.
+3. Deny all other traffic from different hosts (Lab_B, Lab_C) to the same network.
+4. Apply the ACL to the appropriate router interface.
+5. Verify the restriction by attempting to ping Host_A from Host_B (success) and from Lab_B/C (failure).
+
+## Q16 - Selective Traffic Blocking (Web Services)
+
+1. Design a network with 20 subnets based on the 140.80.0.0 address.
+2. Identify the 4th subnet (CCF) and the specific host IP in the 16th subnet (hackathon server).
+3. Configure an extended ACL to block TCP traffic on port 80 (HTTP) and 443 (HTTPS) from the CCF subnet to the server IP.
+4. Permit all other traffic to ensure other server services remain accessible.
+5. Apply the ACL to the network gateway.
+
+## Q17 - IPv6 Interconnection using RIPng
+
+1. Set up an IPv6 network with three routers (R1, R2, R3) and associated subnets.
+2. Assign global unicast IPv6 addresses to all router interfaces.
+3. Enable IPv6 routing and configure RIPng on all routers.
+4. Verify the IPv6 routing table to ensure all subnets are reachable.
+5. Use `ping6` to verify connectivity between hosts across the IPv6 network.
