@@ -1,10 +1,64 @@
-# Algorithms - Networking Lab Experiments (q5 - q17)
+# Algorithms - Networking Lab Experiments (q1 - q17)
+
+## Q1 - Familiarizing Linux networking commands
+
+1. Open a Linux terminal.
+2. Execute the following commands one by one: `ifconfig`, `ifplugstatus`, `iftop`, `ping`, `ip`, `traceroute`, `mtr`, `netstat`, `whois`, `nmap`, `nmcli`, `speedtest-cli`, `bmon`, `nslookup`, and `tcpdump`.
+3. Observe the output of each command to understand its purpose in network configuration, monitoring, and diagnostics.
+
+## Q2 - HTTP Packet Analysis
+
+1. Clear the web browser's cache memory.
+2. Start a packet capture in Wireshark.
+3. Visit any webpage to generate HTTP traffic.
+4. Apply the `http` filter in Wireshark to isolate HTTP messages.
+5. Stop the capture.
+6. Analyze the first GET message to find:
+    - Source and destination IP addresses.
+    - Acceptable medium format, language, encoding, and character set.
+    - Target URL and User-Agent string.
+7. Analyze the first response message to find:
+    - Source and destination IP addresses.
+    - HTTP status code.
+    - The `Last-Modified` timestamp of the HTML file.
+    - The `Content-Length` value.
+    - The HTTP version used by the browser.
+8. Calculate the response time by subtracting the GET request timestamp from the response message timestamp.
+
+## Q3 - SMTP Packet Analysis
+
+1. Compose an e-mail to yourself but do not send it yet.
+2. Start a packet capture in Wireshark.
+3. Send the e-mail.
+4. Apply the `smtp` filter in Wireshark.
+5. Stop the capture.
+6. Identify the client and server IP addresses from the packets.
+7. Determine the SMTP client port (usually in the ephemeral range) and the SMTP server port (typically 25 or 587).
+8. Examine the SMTP commands (e.g., HELO, MAIL FROM, RCPT TO, DATA) and the server's response codes.
+9. Locate and extract the content of the Internet Message Format (IMF) packet encapsulated within the SMTP session.
+
+## Q4 - DNS Packet Analysis
+
+1. Flush the system DNS cache (`ipconfig/flushdns` on Windows or `systemd-resolve --flush-caches` on Linux).
+2. Clear the web browser's cache.
+3. Start a packet capture in Wireshark.
+4. Visit the college website to trigger a DNS lookup.
+5. Apply the `dns` filter in Wireshark.
+6. Locate the first DNS query and its corresponding response; note their packet numbers and whether they used UDP or TCP.
+7. Identify the source and destination ports and the destination IP address for the DNS query.
+8. Compare the ID numbers of the query and response to verify they match.
+9. Analyze the DNS flag field:
+    - Determine its length.
+    - Identify the bit that distinguishes a query from a response.
+    - Identify bits used exclusively in response messages and their functions.
+10. Count the number of question, answer, authority, and additional records in both the query and the response messages.
 
 All experiments are single C files containing both the server and the
 client. Run the file without arguments for the server and with the word
 `client` for the client side (q10 is a standalone packet-capturing tool).
 
 ## Q5 - Matrix type detection (TCP)
+
 
 1. The client asks the user for the order N, builds an N x N matrix with
    random integers in the range [1,50], prints it on screen, opens a TCP
