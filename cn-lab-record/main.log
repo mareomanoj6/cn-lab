@@ -1,0 +1,1085 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.21)  28 OCT 2026 21:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen157
+\ttl@minus=\dimen158
+\ttl@toksa=\toks20
+\titlewidth=\dimen159
+\titlewidthlast=\dimen160
+\titlewidthfirst=\dimen161
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count286
+\c@continuedfloat=\count287
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count288
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count289
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count290
+\float@exts=\toks21
+\float@box=\box54
+\@float@everytoks=\toks22
+\@floatcapt=\box55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count291
+\lst@gtempboxa=\box56
+\lst@token=\toks23
+\lst@length=\count292
+\lst@currlwidth=\dimen172
+\lst@column=\count293
+\lst@pos=\count294
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
+\lst@newlines=\count295
+\lst@lineno=\count296
+\lst@maxwidth=\dimen175
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count297
+\lst@skipnumbers=\count298
+\lst@framebox=\box57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count299
+)
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count300
+\scratchdimen=\dimen176
+\scratchbox=\box58
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen177
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count306
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-55.36449pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<files/logo.png, id=1, 532.99126pt x 489.83pt>
+File: files/logo.png Graphic file (type png)
+<use files/logo.png>
+Package pdftex.def Info: files/logo.png  used on input line 103.
+(pdftex.def)             Requested size: 169.29684pt x 155.58282pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 118.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 118.
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./files/logo.png>]
+File: files/logo.png Graphic file (type png)
+<use files/logo.png>
+Package pdftex.def Info: files/logo.png  used on input line 139.
+(pdftex.def)             Requested size: 145.11053pt x 133.35457pt.
+
+[1]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 169.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 169.
+<files/outputs/ifconfig.png, id=13, 1376.14125pt x 727.71875pt>
+File: files/outputs/ifconfig.png Graphic file (type png)
+<use files/outputs/ifconfig.png>
+Package pdftex.def Info: files/outputs/ifconfig.png  used on input line 184.
+(pdftex.def)             Requested size: 452.9679pt x 239.5261pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 184--184
+ [][] 
+ []
+
+[1
+
+ <./files/outputs/ifconfig.png>]
+<files/outputs/ifplugstatus.png, id=21, 2142.0025pt x 393.47pt>
+File: files/outputs/ifplugstatus.png Graphic file (type png)
+<use files/outputs/ifplugstatus.png>
+Package pdftex.def Info: files/outputs/ifplugstatus.png  used on input line 192
+.
+(pdftex.def)             Requested size: 452.9679pt x 83.2075pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--192
+ [][] 
+ []
+
+<files/outputs/iftop.png, id=22, 1912.14375pt x 942.52126pt>
+File: files/outputs/iftop.png Graphic file (type png)
+<use files/outputs/iftop.png>
+Package pdftex.def Info: files/outputs/iftop.png  used on input line 213.
+(pdftex.def)             Requested size: 452.9679pt x 223.26147pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 213--213
+ [][] 
+ []
+
+[2 <./files/outputs/ifplugstatus.png (PNG copy)>]
+<files/outputs/ping.png, id=26, 1463.4675pt x 403.5075pt>
+File: files/outputs/ping.png Graphic file (type png)
+<use files/outputs/ping.png>
+Package pdftex.def Info: files/outputs/ping.png  used on input line 221.
+(pdftex.def)             Requested size: 452.9679pt x 124.889pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 221--221
+ [][] 
+ []
+
+<files/outputs/ip.png, id=27, 1624.0675pt x 543.02875pt>
+File: files/outputs/ip.png Graphic file (type png)
+<use files/outputs/ip.png>
+Package pdftex.def Info: files/outputs/ip.png  used on input line 229.
+(pdftex.def)             Requested size: 452.9679pt x 151.45041pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 229--229
+ [][] 
+ []
+
+[3 <./files/outputs/iftop.png> <./files/outputs/ping.png>]
+<files/outputs/traceroute.png, id=33, 1389.19pt x 400.49625pt>
+File: files/outputs/traceroute.png Graphic file (type png)
+<use files/outputs/traceroute.png>
+Package pdftex.def Info: files/outputs/traceroute.png  used on input line 237.
+(pdftex.def)             Requested size: 452.9679pt x 130.58751pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 237--237
+ [][] 
+ []
+
+<files/outputs/mtr.png, id=34, 1324.95pt x 432.61626pt>
+File: files/outputs/mtr.png Graphic file (type png)
+<use files/outputs/mtr.png>
+Package pdftex.def Info: files/outputs/mtr.png  used on input line 245.
+(pdftex.def)             Requested size: 452.9679pt x 147.89952pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 245--245
+ [][] 
+ []
+
+[4 <./files/outputs/ip.png> <./files/outputs/traceroute.png>]
+<files/outputs/netstat.png, id=40, 1311.90125pt x 939.51pt>
+File: files/outputs/netstat.png Graphic file (type png)
+<use files/outputs/netstat.png>
+Package pdftex.def Info: files/outputs/netstat.png  used on input line 267.
+(pdftex.def)             Requested size: 452.9679pt x 324.38934pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 267--267
+ [][] 
+ []
+
+[5 <./files/outputs/mtr.png>]
+<files/outputs/whois.png, id=46, 1497.595pt x 830.10126pt>
+File: files/outputs/whois.png Graphic file (type png)
+<use files/outputs/whois.png>
+Package pdftex.def Info: files/outputs/whois.png  used on input line 275.
+(pdftex.def)             Requested size: 452.9679pt x 251.07158pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 275--275
+ [][] 
+ []
+
+[6 <./files/outputs/netstat.png>]
+<files/outputs/nmap.png, id=51, 1533.73pt x 470.75874pt>
+File: files/outputs/nmap.png Graphic file (type png)
+<use files/outputs/nmap.png>
+Package pdftex.def Info: files/outputs/nmap.png  used on input line 297.
+(pdftex.def)             Requested size: 452.9679pt x 139.03065pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 297--297
+ [][] 
+ []
+
+[7 <./files/outputs/whois.png>]
+<files/outputs/nmcli.png, id=56, 1021.8175pt x 186.6975pt>
+File: files/outputs/nmcli.png Graphic file (type png)
+<use files/outputs/nmcli.png>
+Package pdftex.def Info: files/outputs/nmcli.png  used on input line 318.
+(pdftex.def)             Requested size: 452.9679pt x 82.76248pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 318--318
+ [][] 
+ []
+
+[8 <./files/outputs/nmap.png> <./files/outputs/nmcli.png>]
+<files/outputs/speedtest-cli.png, id=62, 1184.425pt x 186.6975pt>
+File: files/outputs/speedtest-cli.png Graphic file (type png)
+<use files/outputs/speedtest-cli.png>
+Package pdftex.def Info: files/outputs/speedtest-cli.png  used on input line 33
+9.
+(pdftex.def)             Requested size: 452.9679pt x 71.39873pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 339--339
+ [][] 
+ []
+
+<files/outputs/bmon.png, id=63, 1604.99625pt x 903.375pt>
+File: files/outputs/bmon.png Graphic file (type png)
+<use files/outputs/bmon.png>
+Package pdftex.def Info: files/outputs/bmon.png  used on input line 360.
+(pdftex.def)             Requested size: 452.9679pt x 254.9558pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 360--360
+ [][] 
+ []
+
+[9 <./files/outputs/speedtest-cli.png>]
+<files/outputs/nslookup.png, id=68, 1010.77625pt x 437.635pt>
+File: files/outputs/nslookup.png Graphic file (type png)
+<use files/outputs/nslookup.png>
+Package pdftex.def Info: files/outputs/nslookup.png  used on input line 369.
+(pdftex.def)             Requested size: 452.9679pt x 196.11923pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 369--369
+ [][] 
+ []
+
+[10 <./files/outputs/bmon.png> <./files/outputs/nslookup.png>]
+<files/outputs/tcpdump.png, id=74, 1914.15125pt x 834.11626pt>
+File: files/outputs/tcpdump.png Graphic file (type png)
+<use files/outputs/tcpdump.png>
+Package pdftex.def Info: files/outputs/tcpdump.png  used on input line 378.
+(pdftex.def)             Requested size: 452.9679pt x 197.3792pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 378--378
+ [][] 
+ []
+
+[11 <./files/outputs/tcpdump.png>] [12]
+Overfull \hbox (37.94162pt too wide) in paragraph at lines 442--443
+[]\OT1/cmr/bx/n/12 Accept (medium for-mat): \OT1/cmtt/m/n/12 text/html, applica
+tion/xhtml+xml, application/xml;
+ []
+
+[13{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<files/outputs/2_1.png, id=89, 1124.2pt x 342.27875pt>
+File: files/outputs/2_1.png Graphic file (type png)
+<use files/outputs/2_1.png>
+Package pdftex.def Info: files/outputs/2_1.png  used on input line 494.
+(pdftex.def)             Requested size: 483.19073pt x 147.11115pt.
+
+Overfull \hbox (37.02283pt too wide) in paragraph at lines 494--494
+ [][] 
+ []
+
+<files/outputs/2_2.png, id=90, 808.01875pt x 748.7975pt>
+File: files/outputs/2_2.png Graphic file (type png)
+<use files/outputs/2_2.png>
+Package pdftex.def Info: files/outputs/2_2.png  used on input line 495.
+(pdftex.def)             Requested size: 452.9679pt x 419.76935pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 495--495
+ [][] 
+ []
+
+[14]
+<files/outputs/2_3.png, id=94, 820.06375pt x 867.24pt>
+File: files/outputs/2_3.png Graphic file (type png)
+<use files/outputs/2_3.png>
+Package pdftex.def Info: files/outputs/2_3.png  used on input line 496.
+(pdftex.def)             Requested size: 452.9679pt x 479.03459pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 496--496
+ [][] 
+ []
+
+[15 <./files/outputs/2_1.png> <./files/outputs/2_2.png>] [16 <./files/outputs/2
+_3.png>] [17] [18]
+<files/outputs/3_1.png, id=111, 1030.85126pt x 233.87375pt>
+File: files/outputs/3_1.png Graphic file (type png)
+<use files/outputs/3_1.png>
+Package pdftex.def Info: files/outputs/3_1.png  used on input line 567.
+(pdftex.def)             Requested size: 498.26744pt x 113.0432pt.
+
+Overfull \hbox (52.09953pt too wide) in paragraph at lines 567--567
+ [][] 
+ []
+
+[19 <./files/outputs/3_1.png>]
+Overfull \hbox (0.88565pt too wide) in paragraph at lines 583--584
+\OT1/cmtt/m/n/12 ipconfig/flushdns \OT1/cmr/m/n/12 on Win-dows or \OT1/cmtt/m/n
+/12 systemd-resolve --flush-caches \OT1/cmr/m/n/12 on Linux. Next,
+ []
+
+[20] [21]
+Overfull \hbox (39.60052pt too wide) in paragraph at lines 661--667
+ [][] 
+ []
+
+[22]
+<files/outputs/4_1.png, id=125, 1293.83376pt x 452.69125pt>
+File: files/outputs/4_1.png Graphic file (type png)
+<use files/outputs/4_1.png>
+Package pdftex.def Info: files/outputs/4_1.png  used on input line 670.
+(pdftex.def)             Requested size: 498.26744pt x 174.33156pt.
+
+Overfull \hbox (52.09953pt too wide) in paragraph at lines 670--670
+ [][] 
+ []
+
+<files/outputs/4_2.png, id=126, 700.6175pt x 760.8425pt>
+File: files/outputs/4_2.png Graphic file (type png)
+<use files/outputs/4_2.png>
+Package pdftex.def Info: files/outputs/4_2.png  used on input line 671.
+(pdftex.def)             Requested size: 451.54738pt x 490.35266pt.
+
+Overfull \hbox (5.37947pt too wide) in paragraph at lines 671--671
+ [][] 
+ []
+
+<files/outputs/4_3.png, id=127, 1004.75375pt x 806.01125pt>
+File: files/outputs/4_3.png Graphic file (type png)
+<use files/outputs/4_3.png>
+Package pdftex.def Info: files/outputs/4_3.png  used on input line 672.
+(pdftex.def)             Requested size: 480.28326pt x 385.28091pt.
+
+Overfull \hbox (34.11536pt too wide) in paragraph at lines 672--672
+ [][] 
+ []
+
+[23 <./files/outputs/4_1.png>] [24 <./files/outputs/4_2.png>] [25 <./files/outp
+uts/4_3.png>] [26]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(./files/Q5_Server.c
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
+ [27] [28]) (./files/Q5_Client.c [29] [30] [31])
+<files/outputs/5_1.png, id=161, 1910.13625pt x 545.03625pt>
+File: files/outputs/5_1.png Graphic file (type png)
+<use files/outputs/5_1.png>
+Package pdftex.def Info: files/outputs/5_1.png  used on input line 743.
+(pdftex.def)             Requested size: 452.9679pt x 129.24785pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 743--743
+ [][] 
+ []
+
+<files/outputs/5_2.png, id=162, 1910.13625pt x 545.03625pt>
+File: files/outputs/5_2.png Graphic file (type png)
+<use files/outputs/5_2.png>
+Package pdftex.def Info: files/outputs/5_2.png  used on input line 744.
+(pdftex.def)             Requested size: 452.9679pt x 129.24785pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 744--744
+ [][] 
+ []
+
+[32 <./files/outputs/5_1.png> <./files/outputs/5_2.png>]
+Overfull \hbox (19.5067pt too wide) in paragraph at lines 771--773
+[]\OT1/cmtt/m/n/12 Really idc about this stupid server as it is of no use irl b
+ut atm,
+ []
+
+
+Overfull \hbox (13.3317pt too wide) in paragraph at lines 778--781
+[]\OT1/cmtt/m/n/12 Really I don't care about this stupid server as it is of no 
+use in
+ []
+
+
+Overfull \hbox (7.1567pt too wide) in paragraph at lines 778--781
+\OT1/cmtt/m/n/12 real life but at the moment, I will design one, to be fair to 
+the
+ []
+
+
+Overfull \hbox (3.20743pt too wide) in paragraph at lines 783--785
+[]\OT1/cmr/m/n/12 Only the fol-low-ing ab-bre-vi-a-tions are con-sid-ered: \OT1
+/cmtt/m/n/12 tbh, ig, tbf, atm, irl, lol, asap,
+ []
+
+[33] [34] (./files/Q6_Server.c [35] [36]) (./files/Q6_Client.c [37])
+<files/outputs/6_1.png, id=184, 1910.13625pt x 475.7775pt>
+File: files/outputs/6_1.png Graphic file (type png)
+<use files/outputs/6_1.png>
+Package pdftex.def Info: files/outputs/6_1.png  used on input line 833.
+(pdftex.def)             Requested size: 452.9679pt x 112.82408pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 833--833
+ [][] 
+ []
+
+<files/outputs/6_2.png, id=185, 1910.13625pt x 295.1025pt>
+File: files/outputs/6_2.png Graphic file (type png)
+<use files/outputs/6_2.png>
+Package pdftex.def Info: files/outputs/6_2.png  used on input line 834.
+(pdftex.def)             Requested size: 452.9679pt x 69.97949pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 834--834
+ [][] 
+ []
+
+[38 <./files/outputs/6_1.png> <./files/outputs/6_2.png>] [39]
+(./files/Q7_Server.c [40] [41] [42] [43]) (./files/Q7_Client.c [44])
+<files/outputs/7_1.png, id=210, 1910.13625pt x 653.44125pt>
+File: files/outputs/7_1.png Graphic file (type png)
+<use files/outputs/7_1.png>
+Package pdftex.def Info: files/outputs/7_1.png  used on input line 909.
+(pdftex.def)             Requested size: 452.9679pt x 154.9546pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 909--909
+ [][] 
+ []
+
+<files/outputs/7_2.png, id=211, 1910.13625pt x 512.91624pt>
+File: files/outputs/7_2.png Graphic file (type png)
+<use files/outputs/7_2.png>
+Package pdftex.def Info: files/outputs/7_2.png  used on input line 910.
+(pdftex.def)             Requested size: 452.9679pt x 121.63103pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 910--910
+ [][] 
+ []
+
+<files/outputs/7_3.png, id=212, 1910.13625pt x 512.91624pt>
+File: files/outputs/7_3.png Graphic file (type png)
+<use files/outputs/7_3.png>
+Package pdftex.def Info: files/outputs/7_3.png  used on input line 911.
+(pdftex.def)             Requested size: 452.9679pt x 121.63103pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 911--911
+ [][] 
+ []
+
+[45 <./files/outputs/7_1.png>]
+<files/outputs/7_4.png, id=217, 1910.13625pt x 472.76625pt>
+File: files/outputs/7_4.png Graphic file (type png)
+<use files/outputs/7_4.png>
+Package pdftex.def Info: files/outputs/7_4.png  used on input line 912.
+(pdftex.def)             Requested size: 452.9679pt x 112.11002pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 912--912
+ [][] 
+ []
+
+[46 <./files/outputs/7_2.png> <./files/outputs/7_3.png> <./files/outputs/7_4.pn
+g>] [47] (./files/Q8_Server.c [48]) (./files/Q8_Client.c [49])
+<files/outputs/8_1.png, id=235, 1910.13625pt x 431.6125pt>
+File: files/outputs/8_1.png Graphic file (type png)
+<use files/outputs/8_1.png>
+Package pdftex.def Info: files/outputs/8_1.png  used on input line 970.
+(pdftex.def)             Requested size: 452.9679pt x 102.35097pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 970--970
+ [][] 
+ []
+
+<files/outputs/8_2.png, id=236, 1910.13625pt x 333.245pt>
+File: files/outputs/8_2.png Graphic file (type png)
+<use files/outputs/8_2.png>
+Package pdftex.def Info: files/outputs/8_2.png  used on input line 971.
+(pdftex.def)             Requested size: 452.9679pt x 79.02446pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 971--971
+ [][] 
+ []
+
+[50] [51 <./files/outputs/8_1.png> <./files/outputs/8_2.png>] [52]
+(./files/Q9_Server.c [53] [54] [55]) (./files/Q9_Client.c [56])
+<files/outputs/9_1.png, id=261, 1910.13625pt x 546.04pt>
+File: files/outputs/9_1.png Graphic file (type png)
+<use files/outputs/9_1.png>
+Package pdftex.def Info: files/outputs/9_1.png  used on input line 1061.
+(pdftex.def)             Requested size: 452.9679pt x 129.48587pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1061--1061
+ [][] 
+ []
+
+<files/outputs/9_2.png, id=262, 1910.13625pt x 298.11375pt>
+File: files/outputs/9_2.png Graphic file (type png)
+<use files/outputs/9_2.png>
+Package pdftex.def Info: files/outputs/9_2.png  used on input line 1062.
+(pdftex.def)             Requested size: 452.9679pt x 70.69357pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1062--1062
+ [][] 
+ []
+
+<files/outputs/9_3.png, id=263, 1910.13625pt x 189.70876pt>
+File: files/outputs/9_3.png Graphic file (type png)
+<use files/outputs/9_3.png>
+Package pdftex.def Info: files/outputs/9_3.png  used on input line 1063.
+(pdftex.def)             Requested size: 452.9679pt x 44.98682pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1063--1063
+ [][] 
+ []
+
+[57 <./files/outputs/9_1.png> <./files/outputs/9_2.png> <./files/outputs/9_3.pn
+g>] [58] (./files/Q10_Capture.c [59] [60])
+<files/outputs/10.png, id=281, 813.63976pt x 483.0045pt>
+File: files/outputs/10.png Graphic file (type png)
+<use files/outputs/10.png>
+Package pdftex.def Info: files/outputs/10.png  used on input line 1113.
+(pdftex.def)             Requested size: 452.9679pt x 268.8961pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1113--1113
+ [][] 
+ []
+
+[61] [62 <./files/outputs/10.png>] [63]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1161.
+
+ [64] [65]
+<files/outputs/11_6.png, id=299, 618.31pt x 709.65125pt>
+File: files/outputs/11_6.png Graphic file (type png)
+<use files/outputs/11_6.png>
+Package pdftex.def Info: files/outputs/11_6.png  used on input line 1254.
+(pdftex.def)             Requested size: 452.9679pt x 519.90358pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1254--1254
+ [][] 
+ []
+
+<files/outputs/11_5.png, id=300, 563.10374pt x 347.2975pt>
+File: files/outputs/11_5.png Graphic file (type png)
+<use files/outputs/11_5.png>
+Package pdftex.def Info: files/outputs/11_5.png  used on input line 1255.
+(pdftex.def)             Requested size: 452.9679pt x 279.36987pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1255--1255
+ [][] 
+ []
+
+[66]
+<files/outputs/11_4.png, id=304, 741.77126pt x 539.01375pt>
+File: files/outputs/11_4.png Graphic file (type png)
+<use files/outputs/11_4.png>
+Package pdftex.def Info: files/outputs/11_4.png  used on input line 1256.
+(pdftex.def)             Requested size: 452.9679pt x 329.15979pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1256--1256
+ [][] 
+ []
+
+[67 <./files/outputs/11_6.png>]
+<files/outputs/11_3.png, id=309, 728.7225pt x 455.7025pt>
+File: files/outputs/11_3.png Graphic file (type png)
+<use files/outputs/11_3.png>
+Package pdftex.def Info: files/outputs/11_3.png  used on input line 1257.
+(pdftex.def)             Requested size: 452.9679pt x 283.25578pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1257--1257
+ [][] 
+ []
+
+<files/outputs/11_2.png, id=310, 556.0775pt x 400.49625pt>
+File: files/outputs/11_2.png Graphic file (type png)
+<use files/outputs/11_2.png>
+Package pdftex.def Info: files/outputs/11_2.png  used on input line 1258.
+(pdftex.def)             Requested size: 452.9679pt x 326.23961pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1258--1258
+ [][] 
+ []
+
+[68 <./files/outputs/11_5.png> <./files/outputs/11_4.png>]
+<files/outputs/11_1.png, id=316, 956.57375pt x 782.925pt>
+File: files/outputs/11_1.png Graphic file (type png)
+<use files/outputs/11_1.png>
+Package pdftex.def Info: files/outputs/11_1.png  used on input line 1259.
+(pdftex.def)             Requested size: 498.26744pt x 407.81624pt.
+
+Overfull \hbox (52.09953pt too wide) in paragraph at lines 1259--1259
+ [][] 
+ []
+
+[69 <./files/outputs/11_3.png> <./files/outputs/11_2.png>] [70 <./files/outputs
+/11_1.png>]
+<files/outputs/12_1.png, id=326, 1444.39626pt x 495.8525pt>
+File: files/outputs/12_1.png Graphic file (type png)
+<use files/outputs/12_1.png>
+Package pdftex.def Info: files/outputs/12_1.png  used on input line 1299.
+(pdftex.def)             Requested size: 452.9679pt x 155.49828pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1299--1299
+ [][] 
+ []
+
+[71] [72 <./files/outputs/12_1.png>] [73] [74] [75] [76]
+<files/outputs/12_2.png, id=347, 728.7225pt x 327.2225pt>
+File: files/outputs/12_2.png Graphic file (type png)
+<use files/outputs/12_2.png>
+Package pdftex.def Info: files/outputs/12_2.png  used on input line 1520.
+(pdftex.def)             Requested size: 452.9679pt x 203.39511pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1520--1520
+ [][] 
+ []
+
+<files/outputs/12_3.png, id=348, 737.75626pt x 807.015pt>
+File: files/outputs/12_3.png Graphic file (type png)
+<use files/outputs/12_3.png>
+Package pdftex.def Info: files/outputs/12_3.png  used on input line 1521.
+(pdftex.def)             Requested size: 452.9679pt x 495.4924pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1521--1521
+ [][] 
+ []
+
+[77 <./files/outputs/12_2.png>] [78 <./files/outputs/12_3.png>]
+<files/outputs/13_1.png, id=358, 1514.65875pt x 661.47125pt>
+File: files/outputs/13_1.png Graphic file (type png)
+<use files/outputs/13_1.png>
+Package pdftex.def Info: files/outputs/13_1.png  used on input line 1556.
+(pdftex.def)             Requested size: 452.9679pt x 197.81712pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1556--1556
+ [][] 
+ []
+
+[79] [80 <./files/outputs/13_1.png>] [81] [82] [83] [84] [85]
+<files/outputs/13_2.png, id=382, 735.74875pt x 745.78625pt>
+File: files/outputs/13_2.png Graphic file (type png)
+<use files/outputs/13_2.png>
+Package pdftex.def Info: files/outputs/13_2.png  used on input line 1809.
+(pdftex.def)             Requested size: 452.9679pt x 459.16223pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1809--1809
+ [][] 
+ []
+
+<files/outputs/13_3.png, id=383, 686.565pt x 553.06625pt>
+File: files/outputs/13_3.png Graphic file (type png)
+<use files/outputs/13_3.png>
+Package pdftex.def Info: files/outputs/13_3.png  used on input line 1810.
+(pdftex.def)             Requested size: 452.9679pt x 364.88982pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1810--1810
+ [][] 
+ []
+
+[86 <./files/outputs/13_2.png>] [87 <./files/outputs/13_3.png>]
+<files/outputs/14_1.png, id=392, 903.375pt x 641.39626pt>
+File: files/outputs/14_1.png Graphic file (type png)
+<use files/outputs/14_1.png>
+Package pdftex.def Info: files/outputs/14_1.png  used on input line 1847.
+(pdftex.def)             Requested size: 452.9679pt x 321.61731pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1847--1847
+ [][] 
+ []
+
+[88] [89 <./files/outputs/14_1.png>] [90] [91] [92]
+<files/outputs/14_2.png, id=410, 755.82375pt x 477.785pt>
+File: files/outputs/14_2.png Graphic file (type png)
+<use files/outputs/14_2.png>
+Package pdftex.def Info: files/outputs/14_2.png  used on input line 1982.
+(pdftex.def)             Requested size: 452.9679pt x 286.33784pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1982--1982
+ [][] 
+ []
+
+<files/outputs/14_3.png, id=411, 595.22375pt x 528.97626pt>
+File: files/outputs/14_3.png Graphic file (type png)
+<use files/outputs/14_3.png>
+Package pdftex.def Info: files/outputs/14_3.png  used on input line 1983.
+(pdftex.def)             Requested size: 452.9679pt x 402.55078pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1983--1983
+ [][] 
+ []
+
+[93 <./files/outputs/14_2.png>] [94 <./files/outputs/14_3.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+2022.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 2022.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 2022.
+
+<files/outputs/15_1.png, id=420, 1580.90625pt x 525.965pt>
+File: files/outputs/15_1.png Graphic file (type png)
+<use files/outputs/15_1.png>
+Package pdftex.def Info: files/outputs/15_1.png  used on input line 2031.
+(pdftex.def)             Requested size: 452.9679pt x 150.70413pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2031--2031
+ [][] 
+ []
+
+[95]
+Overfull \hbox (44.70245pt too wide) in paragraph at lines 2036--2054
+ [][] 
+ []
+
+[96 <./files/outputs/15_1.png>]
+Overfull \hbox (41.05315pt too wide) in paragraph at lines 2063--2064
+[]\OT1/cmr/m/n/12 Bind ACL \OT1/cmtt/m/n/12 10 \OT1/cmr/m/n/12 out-bound (\OT1/
+cmtt/m/n/12 out\OT1/cmr/m/n/12 ) on the LAN in-ter-face (\OT1/cmtt/m/n/12 FastE
+thernet0/1 \OT1/cmr/m/n/12 / \OT1/cmtt/m/n/12 FastEthernet0/0\OT1/cmr/m/n/12 )
+ []
+
+[97] [98]
+<files/outputs/15_2.png, id=436, 572.1375pt x 284.06125pt>
+File: files/outputs/15_2.png Graphic file (type png)
+<use files/outputs/15_2.png>
+Package pdftex.def Info: files/outputs/15_2.png  used on input line 2176.
+(pdftex.def)             Requested size: 452.9679pt x 224.89569pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2176--2176
+ [][] 
+ []
+
+<files/outputs/15_3.png, id=437, 624.3325pt x 167.62625pt>
+File: files/outputs/15_3.png Graphic file (type png)
+<use files/outputs/15_3.png>
+Package pdftex.def Info: files/outputs/15_3.png  used on input line 2177.
+(pdftex.def)             Requested size: 452.9679pt x 121.61926pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2177--2177
+ [][] 
+ []
+
+[99]
+<files/outputs/15_4.png, id=441, 625.33624pt x 167.62625pt>
+File: files/outputs/15_4.png Graphic file (type png)
+<use files/outputs/15_4.png>
+Package pdftex.def Info: files/outputs/15_4.png  used on input line 2178.
+(pdftex.def)             Requested size: 452.9679pt x 121.42487pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2178--2178
+ [][] 
+ []
+
+
+Overfull \hbox (2.41817pt too wide) in paragraph at lines 2182--2183
+\OT1/cmr/m/n/12 (\OT1/cmtt/m/n/12 172.16.30.2\OT1/cmr/m/n/12 ) to com-mu-ni-cat
+e with \OT1/cmtt/m/n/12 Lab[]A\OT1/cmr/m/n/12 , and ver-i-fied by ping-ing \OT1
+/cmtt/m/n/12 Host[]A \OT1/cmr/m/n/12 (\OT1/cmtt/m/n/12 172.16.80.3\OT1/cmr/m/n/
+12 )
+ []
+
+[100 <./files/outputs/15_2.png> <./files/outputs/15_3.png> <./files/outputs/15_
+4.png>]
+Overfull \hbox (6.96828pt too wide) in paragraph at lines 2195--2196
+\OT1/cmr/m/n/12 You are the net-work ad-min-is-tra-tor of your col-lege as-sign
+ed the net-work ad-dress \OT1/cmtt/m/n/12 140.80.0.0
+ []
+
+
+Overfull \hbox (18.38292pt too wide) in paragraph at lines 2210--2211
+[]\OT1/cmr/bx/n/12 Given Net-work Ad-dress: \OT1/cmtt/m/n/12 140.80.0.0 \OT1/cm
+r/m/n/12 (Class B, De-fault Sub-net Mask: \OT1/cmtt/m/n/12 255.255.0.0
+ []
+
+[101]
+Overfull \hbox (49.09477pt too wide) in paragraph at lines 2227--2236
+ [][] 
+ []
+
+<files/outputs/16_1.png, id=454, 1038.88126pt x 580.1675pt>
+File: files/outputs/16_1.png Graphic file (type png)
+<use files/outputs/16_1.png>
+Package pdftex.def Info: files/outputs/16_1.png  used on input line 2243.
+(pdftex.def)             Requested size: 452.9679pt x 252.9551pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2243--2243
+ [][] 
+ []
+
+[102] [103 <./files/outputs/16_1.png>] [104]
+Overfull \hbox (57.54222pt too wide) in paragraph at lines 2319--2321
+[]\OT1/cmr/bx/n/12 Web Browser Check from CCF (\OT1/cmtt/m/n/12 Laptop0 \OT1/cm
+r/bx/n/12 / \OT1/cmtt/m/n/12 Laptop1\OT1/cmr/bx/n/12 ): \OT1/cmr/m/n/12 Nav-i-g
+ate to \OT1/cmtt/m/n/12 http://140.80.128.7\OT1/cmr/m/n/12 .
+ []
+
+<files/outputs/16_2.png, id=465, 664.4825pt x 112.42pt>
+File: files/outputs/16_2.png Graphic file (type png)
+<use files/outputs/16_2.png>
+Package pdftex.def Info: files/outputs/16_2.png  used on input line 2330.
+(pdftex.def)             Requested size: 452.9679pt x 76.635pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2330--2330
+ [][] 
+ []
+
+<files/outputs/16_3.png, id=466, 551.05875pt x 279.0425pt>
+File: files/outputs/16_3.png Graphic file (type png)
+<use files/outputs/16_3.png>
+Package pdftex.def Info: files/outputs/16_3.png  used on input line 2331.
+(pdftex.def)             Requested size: 452.9679pt x 229.37836pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2331--2331
+ [][] 
+ []
+
+[105] [106 <./files/outputs/16_2.png> <./files/outputs/16_3.png>] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6918 strings out of 467533
+ 114166 string characters out of 5422137
+ 883827 words of memory out of 5000000
+ 35767 multiletter control sequences out of 15000+600000
+ 634685 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 67i,12n,77p,576b,1974s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (108 pages, 4479605 bytes).
+PDF statistics:
+ 530 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+
