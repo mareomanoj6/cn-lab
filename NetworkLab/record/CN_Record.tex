@@ -1,0 +1,2492 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumerate}
+
+
+\usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=none,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+\date{} 
+
+\begin{document} \pagenumbering{gobble}
+\newgeometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+
+\begin{titlepage}
+	\centering 
+	{\Large \bfseries COLLEGE OF ENGINEERING TRIVANDRUM \par}
+	
+	{\large \bfseries THIRUVANANTHAPURAM -- 695016 \par}
+	
+	\vspace{1.5cm}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{"../Auxiliary Files/logo"}
+	\end{figure}
+	
+	\vspace{1.5cm}
+	
+	{\LARGE \bfseries DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING \par}
+	
+	\vspace{1.5cm}
+	
+	{\large \bfseries Fifth Semester\par}
+	
+	{\Large \bfseries PCCSL507: NETWORKS LAB\par}
+	
+	\begin{table}[H]
+		\centering \Large 
+		\begin{tabular}{c c c}
+			Name & : & Mareo Manoj \\
+			KTU ID & : & TVE24CS099 \\ 
+		\end{tabular}
+	\end{table}
+	
+	\vspace{2cm}
+	
+	{\Large \bfseries APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY \par}
+	{\large \bfseries 2026-2027\par}
+	
+\end{titlepage}
+
+\restoregeometry
+
+{\centering \Large \bfseries COLLEGE OF ENGINEERING TRIVANDRUM \par}
+
+{\centering \large \bfseries THIRUVANANTHAPURAM -- 695016 \par}
+
+\vspace{1.5cm}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{"../Auxiliary Files/logo"}
+\end{figure}
+
+\vspace{1cm}
+
+{\centering \LARGE \bfseries DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING \par}
+
+\vspace{1.5cm}
+
+{\centering \large \bfseries Fifth Semester\par}
+
+{\centering \Large \bfseries PCCSL507: NETWORKS LAB\par}
+
+\vspace{1.5cm}
+
+\begin{center}
+	\large
+	Certified that this is a bonafide record of work done by Mareo Manoj (TVE24CS099) of S5 CSE (Batch-2) class in the Networks Lab during the year 2026-2027.
+\end{center}
+
+\vspace{3.5cm}
+
+\begin{center}
+	External Examiner \hfill Faculty Member in charge
+\end{center}
+
+
+\chapter*{Contents}
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.8}
+	
+	\begin{tabularx}{\textwidth}{@{}|c |X |c|@{}}
+		\hline 
+		\textbf{Si.No.} & \textbf{Experiment Title} & \textbf{Page Number} \\
+		\hline 
+		1  & Familiarization With Linux Commands & \pageref{exp:1} \\
+		\hline 
+		2  & Familiarization With Wireshark & \pageref{exp:2} \\
+		\hline 
+		3  & Analyzing SMTP Packets With Wireshark & \pageref{exp:3} \\
+		\hline 
+		4  & Analyzing DNS Packets With Wireshark & \pageref{exp:4} \\
+		\hline 
+		5  & Client Server Communication Using TCP & \pageref{exp:5} \\
+		\hline 
+		6  & Client Server Communication Using UDP & \pageref{exp:6} \\
+		\hline 
+		7  & Multiuser Chat Server Using TCP & \pageref{exp:7} \\
+		\hline 
+		8  & Concurrent Time Server & \pageref{exp:8} \\
+		\hline 
+		9  & Concurrent File Server & \pageref{exp:9} \\
+		\hline 
+		10 & Packet Capturing Using Raw Sockets & \pageref{exp:10} \\
+		\hline 
+		11 & Familiarization With Cisco Packet Tracer & \pageref{exp:11} \\
+		\hline 
+		12 & Static Routing & \pageref{exp:12} \\
+		\hline 
+		13 & RIPv2 Routing & \pageref{exp:13} \\
+		\hline 
+		14 & OSPF Routing & \pageref{exp:14} \\
+		\hline 
+		15 & Standard Access Control List (ACL) & \pageref{exp:15} \\
+		\hline 
+		16 & Subnetting and Extended ACL Configuration & \pageref{exp:16} \\
+		\hline 
+	\end{tabularx}
+\end{table}
+
+
+\newpage
+
+
+\begin{center} \pagenumbering{arabic}
+	\bfseries 
+	Experiment 1 \hfill Date: 07/07/2026
+\end{center}
+
+\label{exp:1}
+\begin{center}
+	{\bfseries \Huge Familiarization With Linux Network Commands \par}	
+\end{center}
+
+\section*{Aim}
+To familiarize the following basic Linux commands: ifconfig, ifplugstatus, iftop, ping, ip, traceroute, mtr, netstat, whois, nmap, nmcli, speedtest-cli, bmon, nslookup, tcpdump.
+\section*{Theory}
+
+\begin{enumerate}
+	\item \texttt{ifconfig}: Displays or configures network interfaces. It is considered legacy on many Linux systems; \texttt{ip} is usually preferred.
+	\begin{itemize}
+		\item \texttt{-a}: show all interfaces, including inactive ones.
+		\item \texttt{up}: enable a specified interface.
+		\item \texttt{down}: disable a specified interface.
+		\item \texttt{[interface]}: show or configure a particular interface, such as \texttt{eth0}.
+	\end{itemize}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/ifconfig"}
+\end{figure}
+	
+	\item \texttt{ifplugstatus}: Reports whether a network interface has a physical link, where supported.
+	\begin{itemize}
+		\item \texttt{-a}: check all interfaces.
+		\item \texttt{-i [interface]}: check a specified interface.
+		\item \texttt{-v}: show more detailed output.
+		\item \texttt{-h}: display help.
+	\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/ifplugstatus"}
+\end{figure}
+
+	\item \texttt{iftop}: Shows live network traffic by connection, helping identify which hosts are using bandwidth.
+	\begin{itemize}
+		\item \texttt{-i [interface]}: monitor a specified interface.
+		\item \texttt{-n}: do not resolve hostnames.
+		\item \texttt{-P}: show port numbers.
+		\item \texttt{-B}: display bandwidth in bytes rather than bits.
+	\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/iftop"}
+\end{figure}
+
+	\item \texttt{ping}: Sends test packets to a host to check reachability and measure round-trip time.
+	\begin{itemize}
+		\item \texttt{-c [count]}: send a specified number of packets.
+		\item \texttt{-i [seconds]}: set the interval between packets.
+		\item \texttt{-W [seconds]}: set the reply timeout.
+		\item \texttt{-4} or \texttt{-6}: use IPv4 or IPv6.
+	\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/ping"}
+\end{figure}
+
+	\item \texttt{ip}: Inspects and manages network interfaces, addresses, routes, and related settings.
+	\begin{itemize}
+		\item \texttt{ip addr}: display or manage IP addresses.
+		\item \texttt{ip link}: display or manage network interfaces.
+		\item \texttt{ip route}: display or manage routing entries.
+		\item \texttt{-br}: show compact, brief output (for example, \texttt{ip -br addr}).
+	\end{itemize}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/ip"}
+\end{figure}
+	
+	\item \texttt{traceroute}: Shows the network hops packets take toward a destination.
+	\begin{itemize}
+		\item \texttt{-n}: show numeric IP addresses without hostname lookups.
+		\item \texttt{-m [hops]}: set the maximum number of hops.
+		\item \texttt{-w [seconds]}: set the wait time for each reply.
+		\item \texttt{-I}: use ICMP probes instead of the default probe type.
+	\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/traceroute"}
+\end{figure}
+
+	\item \texttt{mtr}: Combines traceroute-style hop discovery with repeated measurements of packet loss and latency.
+	\begin{itemize}
+		\item \texttt{-r}: produce a report and exit.
+		\item \texttt{-c [count]}: send a specified number of probes in report mode.
+		\item \texttt{-n}: show numeric addresses without hostname lookups.
+		\item \texttt{-i [seconds]}: set the interval between probes.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/mtr"}
+\end{figure}
+	\item \texttt{netstat}: Displays network connections, listening sockets, routing tables, and interface statistics. On many systems, \texttt{ss} is the modern replacement.
+	\begin{itemize}
+		\item \texttt{-t}: show TCP connections.
+		\item \texttt{-u}: show UDP connections.
+		\item \texttt{-l}: show listening sockets.
+		\item \texttt{-n}: show numeric addresses and port numbers.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/netstat"}
+\end{figure}
+	\item \texttt{whois}:  Queries registration information for a domain name or IP address; available details vary by registry.
+	\begin{itemize}
+		\item \texttt{-h [server]}: query a specified WHOIS server.
+		\item \texttt{-p [port]}: use a specified server port.
+		\item \texttt{-I}: use an IANA referral query, if supported by the installed version.
+		\item \texttt{[name or address]}: provide the domain or IP address to look up.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/whois"}
+\end{figure}
+	\item \texttt{nmap}: Discovers hosts and services on a network. Use it only on systems you own or have permission to assess.
+	\begin{itemize}
+		\item \texttt{-sV}: try to identify service versions.
+		\item \texttt{-p [ports]}: scan specified ports, such as \texttt{-p 22,80}.
+		\item \texttt{-sn}: perform host discovery without a port scan.
+		\item \texttt{-oN [file]}: save results in normal text format.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/nmap"}
+\end{figure}
+	\item \texttt{nmcli}: Controls and inspects NetworkManager connections from the command line.
+	\begin{itemize}
+		\item \texttt{device status}: list devices and their connection states.
+		\item \texttt{connection show}: list saved connection profiles.
+		\item \texttt{connection up [name]}: activate a connection profile.
+		\item \texttt{connection down [name]}: deactivate a connection profile.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/nmcli"}
+\end{figure}
+	\item \texttt{speedtest-cli}: Measures internet download speed, upload speed, and latency using a speed-test service.
+	\begin{itemize}
+
+		\item \texttt{--simple}: show a compact results summary.
+		\item \texttt{--list}: list available test servers.
+		\item \texttt{--server [ID]}: use a specified server.
+		\item \texttt{--bytes}: display speeds in bytes per second.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/speedtest-cli"}
+\end{figure}
+	\item \texttt{bmon}: Displays live bandwidth usage and traffic statistics for network interfaces.
+	\begin{itemize}
+		\item \texttt{-p [interfaces]}: select interfaces to monitor.
+		\item \texttt{-o [format]}: choose an output format.
+		\item \texttt{-r [rate]}: set the refresh rate.
+		\item \texttt{-h}: display help.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/bmon"}
+\end{figure}
+	\item \texttt{nslookup}: Queries DNS servers for records such as IP addresses associated with domain names.
+	\begin{itemize}
+		\item \texttt{-type=A}: query IPv4 address records.
+		\item \texttt{-type=AAAA}: query IPv6 address records.
+		\item \texttt{-type=MX}: query mail-exchange records.
+		\item \texttt{[server]}: specify a DNS server to query.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/nslookup"}
+\end{figure}	
+	\item \texttt{tcpdump}: Captures and displays network packets matching a filter. Capturing traffic may require administrator privileges; capture only on networks you are authorized to monitor.
+	\begin{itemize}
+
+		\item \texttt{-i [interface]}: capture on a specified interface.
+		\item \texttt{-n}: do not resolve addresses or port numbers to names.
+		\item \texttt{-c [count]}: stop after capturing a specified number of packets.
+		\item \texttt{-w [file]}: write captured packets to a file.
+	\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/tcpdump"}
+\end{figure}
+\end{enumerate}
+
+\section*{Result}
+Successfully familiarized with basic Linux networking commands. 
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 2 \hfill 07/07/2026
+\end{center}
+
+\label{exp:2}
+\begin{center}
+	{\bfseries \Huge Familiarization With Wireshark \par}
+\end{center}
+
+\section*{Aim}
+
+To capture and analyze HTTP traffic using Wireshark, and identify request and response details, including IP addresses, accepted content types, URL, user agent, status code, modification time, content length, response time, and HTTP version.
+\begin{enumerate}
+	\itemsep 0em
+	\item[(a)] The source IP address and destination IP address of the first GET message.
+	\item[(b)] The medium format, the language, the encoding, and the character set that the client can accept (use the first GET message).
+	\item[(c)] The URL of the website and the user agent (use the first GET message).
+	\item[(d)] The source IP address and destination IP address of the first response message.
+	\item[(e)] The status codes for the first response message.
+	\item[(f)] When the HTML file that you are retrieving was last modified at the server.
+	\item[(g)] Value of the content-length field of the first response message.
+	\item[(h)] How long it took from the time the GET message was sent until the response message was received (use the timestamps of a GET message and that of the corresponding response message; by default, the time column's value is the amount of time in seconds since Wireshark tracing began).
+	\item[(i)] The HTTP version of your browser.
+\end{enumerate}
+
+\section*{Procedure}
+\begin{enumerate}
+	\itemsep 0em 
+	\item Open the web browser and clear the browser cache.
+	\item Open Wireshark and select the active network interface.
+	\item Click \textbf{Start Capturing Packets}.
+	\item Open a webpage in the browser.
+	\item In Wireshark, type \texttt{http} in the display filter field and click \textbf{Apply}.
+	\item After enough packets have been captured, select \textbf{Capture $\rightarrow$ Stop}.
+	\item Analyze the first HTTP GET request and its corresponding response message.
+\end{enumerate}
+
+
+\section*{Output}
+
+\subsection*{(a) Source and Destination IP Address of the First GET Message}
+Select the first HTTP GET packet and expand the \textit{Internet Protocol} section in the packet details pane. The IP address of the local machine can be confirmed using \texttt{hostname -I}.
+
+\textbf{Source IP:} \texttt{192.168.1.17} \hfill \textbf{Destination IP:} \texttt{52.221.221.142}
+
+\subsection*{(b) Medium Format, Language, Encoding and Character Set Accepted by the Client}
+Expand the \textit{Hypertext Transfer Protocol} section of the first GET packet and read the \texttt{Accept}, \texttt{Accept-Language}, \texttt{Accept-Encoding} and \texttt{Accept-Charset} fields.
+
+\begin{itemize}
+	\item \textbf{Accept (medium format):} \texttt{text/html, application/xhtml+xml, application/xml; q = 0.9, */*; q= 0.8/r/n}
+	\item \textbf{Accept-Language:} \texttt{en-US, en ; q=0.5/r/n}
+	\item \textbf{Accept-Encoding:} \texttt{gzip, deflate/r/n}
+	\item \textbf{Accept-Charset:} not present in this request
+\end{itemize}
+
+\subsection*{(c) URL of the Website and User Agent}
+Read the \texttt{Host} and \texttt{User-Agent} fields in the headers of the GET request.
+
+\begin{itemize}
+	\item \textbf{Host:} \texttt{nerverssl.com}
+	\item \textbf{Full request URI:} \texttt{http://brightlushquietsunset.neverssl.com/}
+	\item \textbf{User-Agent:} \texttt{Brave 1.47}
+\end{itemize}
+
+\subsection*{(d) Source and Destination IP Address of the First Response Message}
+Locate the first HTTP response (\texttt{200 OK}) and expand the \textit{Internet Protocol} section. The source and destination are reversed compared with the GET request.
+
+\textbf{Source IP:} \texttt{52.221.221.142} \hfill \textbf{Destination IP:} \texttt{192.168.1.17}
+
+\subsection*{(e) Status Code of the First Response Message}
+Read the status code and reason phrase in the response line.
+
+\textbf{Status Code:} \texttt{200} \hfill \textbf{Reason Phrase:} \texttt{OK}
+
+\subsection*{(f) Last Modified Time of the HTML File at the Server}
+Read the \texttt{Last-Modified} header field in the first response.
+
+\textbf{Last-Modified:} \texttt{Mon, 17 Nov 2025 23:19:21 GMT}
+
+\subsection*{(g) Value of the Content-Length Field of the First Response}
+Read the \texttt{Content-Length} field in the response headers.
+
+\textbf{Content-Length:} \texttt{2} bytes
+
+\subsection*{(h) Time Taken from GET Message to Response}
+Note the Time column value of the GET packet and of the corresponding response; the difference gives the response time. By default, the Time column shows seconds elapsed since the capture began.
+
+\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{GET (packet 174)} & \textbf{Response (packet 179)} & \textbf{Difference} \\ \hline
+		9.282172378 s & 9.333799250 s & 0.051626872 s \\ \hline
+	\end{tabular}
+\end{center}
+The response was received about 0.0516 s (approximately 51.6 ms) after the GET message was sent.
+
+\subsection*{(i) HTTP Version Used by the Browser}
+Read the request line of the first GET packet.
+
+\textbf{HTTP Version:} \texttt{HTTP/1.1}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/2_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/2_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/2_3"}
+\end{figure}
+
+
+\section*{Result}
+HTTP packets were successfully captured using Wireshark. The first GET request and its response were analyzed to identify the source and destination IP addresses, request headers, response status code (200 OK), Last-Modified time, Content-Length, response time (about 0.0516 s) and the HTTP version (HTTP/1.1).
+
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 3 \hfill 14/07/2026
+\end{center}
+\label{exp:3}
+\begin{center}
+	{\bfseries \Huge Analyzing SMTP Packets With Wireshark \par}
+\end{center}
+
+\section*{Aim}
+Compose an e-mail and address it to yourself, but do not send it yet. Open the Wireshark and start capturing. Go to your e-mail user agent and send the e-mail. In the Wireshark window, type \texttt{smtp} in the filter field and click Apply. Stop capturing and save the captured file. Using the captured information, answer the following:
+\begin{enumerate}
+	\itemsep 0em 
+	\item[(a)] All SMTP packets have the same two IP addresses. Which one is the IP address of your computer? Which host does the other IP address represent?
+	\item[(b)] All SMTP packets have the same two port numbers. Which one is the port number of the SMTP client process? In which range is the client port number?
+	\item[(c)] What is the port number of the SMTP server process?
+	\item[(d)] Examine the SMTP commands or SMTP response codes in each SMTP packet and write down their meanings.
+	\item[(e)] There is an IMF packet that is encapsulated inside an SMTP packet. What is the content of this packet?
+\end{enumerate}
+
+
+\section*{Procedure}
+\begin{enumerate}
+	\itemsep 0em 
+	\item Open Thunderbird, compose an e-mail addressed to yourself, but do not send it yet.
+	\item Open Wireshark, select the active network interface and click \textbf{Start Capturing Packets}.
+	\item Return to Thunderbird and send the e-mail.
+	\item In Wireshark, type \texttt{smtp} in the display filter field and click \textbf{Apply}.
+	\item Select \textbf{Capture $\rightarrow$ Stop} and save the captured file.
+	\item Analyze the captured SMTP packets.
+\end{enumerate}
+
+
+\section*{Output}
+\subsection*{(a) IP Addresses}
+All SMTP packets carry the same two IP addresses: one belongs to the local computer (SMTP client) and the other to the mail server.
+
+\textbf{IP of my computer:} \texttt{192.168.1.17} \hfill \textbf{IP of the other host:} \texttt{192.179.20.109}
+
+
+\subsection*{(b) Client Port Number}
+The client port is assigned dynamically by the operating system from the ephemeral (dynamic) port range, which is used for temporary connections initiated by client applications.
+
+\textbf{SMTP client port: 33856}
+
+
+\subsection*{(c) SMTP Server Port Number}
+
+\textbf{SMTP server port: 587}
+
+\subsection*{(d) SMTP Commands and Response Codes}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Command / Code} & \textbf{Meaning} \\ \hline
+		\texttt{EHLO}      & Extended HELO command used by the client to introduce itself and to ask for the server's capabilities. \\ \hline
+		\texttt{MAIL FROM} & Specifies the sender's e-mail address. \\ \hline
+		\texttt{220} & Service ready; the server is ready to accept the connection. \\ \hline
+		\texttt{250} & Requested action completed (``at your service''); the server's reply to \texttt{EHLO}, listing its capabilities. \\ \hline
+		\texttt{502} & Unrecognized command; the server did not understand what it received. \\ \hline
+		\texttt{530} & Authentication required. \\ \hline
+	\end{tabular}
+	\caption{SMTP commands and response codes observed}
+\end{table}
+
+\subsection*{(e) Content of the IMF Packet}
+
+The Internet Message Format (IMF) packet is encapsulated inside the SMTP \texttt{DATA} exchange and carries the message headers and body. In this capture the IMF packet cannot be found, because the connection to the Gmail server is encrypted. The message content (From, To, Subject and body) is therefore not visible in Wireshark.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/3_1"}
+\end{figure}
+
+\section*{Result}
+SMTP packets were successfully captured and analyzed using Wireshark. The IP ad-
+dresses, client and server port numbers, SMTP commands and response codes were iden-
+tified and studied
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 4 \hfill 14/07/2026
+\end{center}
+\label{exp:4}
+\begin{center}
+	{\bfseries \Huge Analyzing DNS Packets With Wireshark \par}
+\end{center}
+
+\section*{Aim}
+First, clear the DNS record from the cache memory of your computer. For this, use \texttt{ipconfig/flushdns} on Windows or \texttt{systemd-resolve --flush-caches} on Linux. Next, clear your browser's cache memory. Open the Wireshark and start capturing. In your browser visit your college website. Wireshark starts to capture packets. Type \texttt{dns} in the filter field and press Apply so that only DNS messages are displayed. Stop capturing and save the captured file. Using the captured information, answer the following questions:
+\begin{enumerate}
+	\itemsep 0em
+	\item[(a)] Locate the first DNS query message resolving your college website. What is the packet number (this ``packet number'' is assigned by Wireshark for listing purposes only; it is NOT a packet number contained in any real packet header) in the trace for the DNS query message?
+	\item[(b)] Is this query message sent over UDP or TCP?
+	\item[(c)] Now locate the corresponding DNS response to the initial DNS query. What is the packet number in the trace for the DNS response message? Is this response message received via UDP or TCP?
+	\item[(d)] What are the source and destination port numbers for the DNS query message?
+	\item[(e)] What are the source and destination port numbers for the DNS response message?
+	\item[(f)] To what IP address is the DNS query message sent?
+	\item[(g)] What is the query message ID number? What is the response message ID number? What is the purpose of this field?
+	\item[(h)] What is the length of the flag field in a DNS message?
+	\item[(i)] Which bit in the flag field determines whether the message is a query or a response?
+	\item[(j)] Which bits are used only in the response message? What is the function of these bits in the response message?
+	\item[(k)] How many question records, answer records, authority records, and additional records are present in the query message?
+	\item[(l)] How many question records, answer records, authority records, and additional records are present in the response message?
+\end{enumerate}
+
+\section*{Procedure}
+\begin{enumerate}
+	\itemsep 0em
+	\item Open Wireshark and select the active network interface (Wi-Fi or Ethernet).
+	\item Clear the DNS cache of the system so that a fresh lookup is generated:
+	\begin{lstlisting}
+		sudo resolvectl flush-caches
+	\end{lstlisting}
+	\item Clear the browser cache.
+	\item Click \textbf{Start Capturing Packets}.
+	\item Visit the college website (\texttt{cet.ac.in}) in the browser.
+	\item Type \texttt{dns} in the display filter field and click \textbf{Apply}.
+	\item Select \textbf{Capture $\rightarrow$ Stop}.
+	\item Save the capture file using \textbf{File $\rightarrow$ Save As} with a \texttt{.pcapng} extension.
+	\item Analyze the DNS query and response packets.
+\end{enumerate}
+
+\section*{Output}
+
+\subsection*{(a) Packet Number of the First DNS Query}
+\textbf{Packet No.:} \texttt{47} 
+
+\subsection*{(b) Transport Protocol of the Query (UDP or TCP)}
+\textbf{Protocol:} \texttt{UDP (User Datagram Protocol)}
+
+\subsection*{(c) Packet Number and Protocol of the DNS Response}
+\textbf{Packet No.:} \texttt{61} (for type \texttt{A} query \texttt{0xd1ef}) / \texttt{63} (for \texttt{0x7084}) \hfill \textbf{Protocol:} \texttt{UDP}
+
+\subsection*{(d) Source and Destination Ports of the DNS Query}
+\textbf{Source Port:} \texttt{35011} (Packet 47) / \texttt{42308} (Packet 49) \hfill \textbf{Destination Port:} \texttt{53}
+
+\subsection*{(e) Source and Destination Ports of the DNS Response}
+\textbf{Source Port:} \texttt{53} \hfill \textbf{Destination Port:} \texttt{42308} (Packet 61) / \texttt{35011} (Packet 63)
+
+\subsection*{(f) Destination IP Address of the DNS Query}
+\textbf{Destination IP:} \texttt{10.219.57.53} (IPv4 DNS Server)
+
+\subsection*{(g) Query and Response Message ID (Transaction ID)}
+\textbf{Query ID:} \texttt{0x7084} (Packet 47) / \texttt{0xd1ef} (Packet 49) \hfill \textbf{Response ID:} \texttt{0xd1ef} (Packet 61) / \texttt{0x7084} (Packet 63)
+
+The transaction ID is used to match a response with the query that produced it. The server copies the ID of the query into its response.
+
+\subsection*{(h) Length of the Flags Field}
+The Flags field in a DNS message is \textbf{16 bits (2 bytes)} long (\texttt{0x0100} in the query and \texttt{0x8180} in the response).
+
+\subsection*{(i) Bit that Distinguishes a Query from a Response}
+The \textbf{QR} (1st / most significant) bit in the Flags field is $0$ for a query and $1$ for a response.
+
+\textbf{QR value in the query:} \texttt{0} \hfill \textbf{QR value in the response:} \texttt{1}
+
+\subsection*{(j) Bits Used Only in the Response Message}
+\begin{itemize}
+	\itemsep 0em
+	\item \textbf{AA (Authoritative Answer):} set when the responding server is authoritative for the queried domain.
+	\item \textbf{RA (Recursion Available):} set when the server supports recursive queries.
+	\item \textbf{RCODE (Response Code):} indicates the status of the response (e.g.\ $0$ = no error, $3$ = name does not exist).
+\end{itemize}
+
+\textbf{AA:} \texttt{0} (Not authoritative) \hfill \textbf{RA:} \texttt{1} (Recursion available) \hfill \textbf{RCODE:} \texttt{0} (No error)
+
+\subsection*{(k) and (l) Resource Record Counts}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\textbf{Message} & \textbf{Questions} & \textbf{Answer RRs} & \textbf{Authority RRs} & \textbf{Additional RRs} \\ \hline
+		Query (Packet 47 / 49) & 1 & 0 & 0 & 1 \\ \hline
+		Response (Packet 61)   & 1 & 1 & 0 & 1 \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/4_3"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/4_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/4_2"}
+\end{figure}
+
+
+\section*{Result}
+DNS packets for \texttt{cet.ac.in} were successfully captured and analyzed using Wireshark. The DNS query and response packets, source and destination IP addresses, port numbers, transaction IDs, flags and resource records were identified and studied.
+
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 5 \hfill 28/07/2026
+\end{center}
+\label{exp:5}
+\begin{center}
+	{\bfseries \Huge Client Server Communication Using TCP \par}
+\end{center}
+
+\section*{Aim}
+Client-Server communication using TCP: The client inputs an integer N and creates a
+square matrix of order N by populating the matrix with random numbers in the range
+[1,50]. It then sends the matrix to the server which identifies the matrix type (upper
+triangular, lower triangular, diagonal). The server then informs the type (as a string) to the
+client which it prints.
+
+\section*{Procedure}
+\subsection*{Server Algorithm}
+\begin{enumerate}
+	\itemsep 0em
+	\item Start.
+	\item Initialize a TCP socket and bind it to a specific IP address and port (bind()).
+	\item Listen for incoming client connection requests (listen()).
+	\item Accept a connection request from a client, establishing a dedicated communication socket (accept()).
+	\item Receive the order $N$ and the matrix elements sent by the client (recv() / read()).
+	\item Process the Matrix to determine its type using the following checks:
+	\begin{itemize}
+		\item Diagonal Matrix: Check if all elements where row index $i \neq$ column index $j$ are equal to zero.
+		\item Upper Triangular Matrix: Check if all elements below the main diagonal ($i > j$) are equal to zero.
+		\item Lower Triangular Matrix: Check if all elements above the main diagonal ($i < j$) are equal to zero.
+	\end{itemize}
+	\item Format the result as a string (e.g., ``Upper Triangular Matrix'').
+	\item Send the result string back to the client via the socket (send() / write()).
+	\item Close the client connection socket.
+	\item Stop.
+\end{enumerate}
+
+\subsection*{Client Algorithm}
+\begin{enumerate}
+	\itemsep 0em
+	\item Start.
+	\item Initialize a TCP socket using socket programming functions (socket()).
+	\item Connect to the server using the server's IP address and port number (connect()).
+	\item Input the integer $N$ representing the order of the square matrix from the user.
+	\item Generate an $N \times N$ matrix and populate it with random numbers in the range $[1, 50]$.
+	\item Display the generated matrix on the client console.
+	\item Send the order $N$ followed by the matrix elements to the server via the TCP connection (send() / write()).
+	\item Receive the matrix type string sent back by the server (recv() / read()).
+	\item Print the received matrix type on the client console.
+	\item Close the socket connection (close()).
+	\item Stop.
+\end{enumerate}
+
+\section*{Program}
+
+\subsection*{Server}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q5_Server.c"}
+
+\subsection*{Client}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q5_Client.c"}
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/5_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/5_2"}
+\end{figure}
+
+\section*{Result}
+The program was executed and verified successfully.
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 6 \hfill 11/08/2026
+\end{center}
+\label{exp:6}
+\begin{center}
+	{\bfseries \Huge Client Server Communication Using UDP \par}
+\end{center}
+
+\section*{Aim}
+
+Client-Server communication using UDP: You are very good at communicating in the
+``new generation'' English language with all sorts of abbreviations like tbh, ig, etc. Now
+design a client-server application as follows: The client inputs a new-generation English
+sentence from the user and sends it to the server. The server then translates the received
+sentence to formal English and sends the translated sentence back to the client which it
+prints.
+
+\textit{Sample string sent to the server}
+
+\begin{quote}
+	\ttfamily
+	Really idc about this stupid server as it is of no use irl but atm,
+	I will design one, tbf to the professor.
+\end{quote}
+
+\textit{Translated string sent back to the client}
+\begin{quote}
+	\ttfamily
+	Really I don't care about this stupid server as it is of no use in
+	real life but at the moment, I will design one, to be fair to the
+	professor.
+\end{quote}
+
+Only the following abbreviations are considered:
+\texttt{tbh, ig, tbf, atm, irl, lol, asap, omg, ttyl, idk, nvm}
+
+\section*{Algorithm}
+
+\subsection*{Server Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Initialize a UDP socket using socket().
+	\item Bind the socket to a designated IP address and port number using the bind() function.
+	\item Display a status message indicating that the server is ready and listening for incoming UDP packets.
+	\item Receive the incoming message packet and the client's address tuple (IP, port) using recvfrom().
+	\item Extract and decode the byte data into a string.
+	\item Process the Text (Translation Logic):
+	\begin{itemize}
+		\item Split the incoming sentence into individual words.
+		\item Maintain a predefined dictionary mapping abbreviations to their formal equivalents (e.g., "irl": "in real life", "atm": "at the moment").
+		\item Iterate through each word, strip trailing punctuation, and check if it matches any key in the abbreviation dictionary (case-insensitive).
+		\item If a match is found, replace the abbreviation with its formal expansion while preserving punctuation.
+		\item Recombine the words into a single translated formal sentence.
+	\end{itemize}
+	\item Send the translated formal string back to the client's address using the sendto() function.
+	\item Stop.
+\end{enumerate}
+
+\subsection*{Client Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Initialize a UDP socket using socket().
+	\item Prompt the user to input a sentence containing modern abbreviations (e.g., \textit{idc}, \textit{irl}, \textit{atm}, \textit{tbf}).
+	\item Send the input sentence as a byte stream to the server's IP address and port using the sendto() function.
+	\item Wait for the response packet from the server using the recvfrom() function.
+	\item Receive the translated formal English string from the server.
+	\item Print the translated string on the client console.
+	\item Close the socket connection (close()).
+	\item Stop.
+\end{enumerate}
+
+\section*{Program}
+
+\subsection*{Server}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q6_Server.c"}
+
+\subsection*{Client}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q6_Client.c"}
+
+\vspace{0.5cm}
+
+\section*{Output}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/6_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/6_2"}
+\end{figure}
+
+
+\section*{Result}
+
+The program was executed and verified successfully.
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 7 \hfill 11/08/2026
+\end{center}
+
+\label{exp:7}
+\begin{center}
+	{\bfseries \Huge Multiuser Chat Server Using TCP \par}
+\end{center}
+
+\section*{Aim}
+
+Implement a multi-user chat server using TCP as the transport layer protocol.
+
+\section*{Algorithm}
+
+\subsection*{Server Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create Server Socket using socket().
+	\item Bind and associate the server socket with an IP address and a predefined port number using bind().
+	\item Put the server socket into listening mode using listen().
+	\item Initialize client list by creating a data structure (e.g., a list or set) to keep track of all active client sockets and their threads.
+	\item Accept Connections (Main Loop):
+	\begin{itemize}
+		\item Continuously wait for incoming client connection requests using accept().
+		\item Upon a successful connection, accept the client socket and create a new dedicated Client Handler Thread for that client.
+		\item Add the client socket to the active client list.
+	\end{itemize}
+	\item Handle Client Communication (Inside Client Thread):
+	\begin{itemize}
+		\item Receive: Continuously read incoming message bytes from the client socket.
+		\item Broadcast: When a message is received, iterate through the active client list and send the message to all other connected client sockets (excluding the sender).
+		\item Disconnection: If the client disconnects, close the client socket, remove it from the active client list, terminate the thread, and broadcast a departure notification.
+	\end{itemize}
+	\item Stop.
+\end{enumerate}
+
+\subsection*{Client Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create client socket using socket().
+	\item Establish a connection to the server's IP address and port using connect().
+	\item Spawn dual channels (Concurrency), by spliting execution into two concurrent tasks:
+	\begin{itemize}
+		\item Receiver Thread:
+		\begin{itemize}
+			\item Continuously listen for incoming data from the client\_socket.
+			\item Print received messages onto the user's console.
+		\end{itemize}
+		\item Sender Loop (Main Thread):
+		\begin{itemize}
+			\item Read chat input from the user's console (stdin).
+			\item Send the typed message across the client\_socket to the server.
+		\end{itemize}
+	\end{itemize}
+	\item Disconnect: If the user types an exit command, close the client\_socket and terminate the program.
+	\item Stop.
+\end{enumerate}
+
+\section*{Program}
+
+\subsection*{Server}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q7_Server.c"}
+
+\subsection*{Client}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q7_Client.c"}
+
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/7_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/7_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/7_3"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/7_4"}
+\end{figure}
+
+
+
+\section*{Result}
+
+The program was executed and verified successfully.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 8 \hfill 03/09/2026
+\end{center}
+\label{exp:8}
+\begin{center}
+	{\bfseries \Huge Concurrent Time Server \par}
+\end{center}
+
+\section*{Aim}
+
+Implement a concurrent Time Server application using UDP to execute the program at a
+remote server. The client sends a time request to the server which sends its system time
+back. The client then displays the received time value.
+
+\section*{Algorithm}
+
+\subsection*{Server Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create a UDP socket using socket().
+	\item Initialize the server address structure with the appropriate IP address and port number.
+	\item Bind the socket to the server address using the bind() system call.
+	\item Receive the time request packet from a client along with the client's socket address using recvfrom().
+	\item Fetch the current system time of the server machine.
+	\item Send the formatted system time string back to the client using sendto() with the client's address details.
+	\item Close the socket.
+	\item Stop.
+\end{enumerate}
+
+\subsection*{Client Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create a UDP socket using socket().
+	\item Initialize the server address structure with the target server's IP address and port number.
+	\item Send a time request message to the server using sendto().
+	\item Wait for and receive the response containing the current system time from the server using recvfrom().
+	\item Display the received system time value on the client console.
+	\item Close the socket.
+	\item Stop.
+\end{enumerate}
+
+\section*{Program}
+
+\subsection*{Server}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q8_Server.c"}
+
+\subsection*{Client}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q8_Client.c"}
+
+\vspace{0.5cm}
+
+\section*{Output}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/8_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/8_2"}
+\end{figure}
+
+
+\section*{Result}
+
+The program was executed and verified successfully.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 9 \hfill 03/09/2026
+\end{center}
+\label{exp:9}
+\begin{center}
+	{\bfseries \Huge Concurrent File Server \par}
+\end{center}
+
+\section*{Aim}
+
+Develop a concurrent file server that will provide the file requested by the client if it
+exists. If not, the server sends an appropriate message to the client. The server should also
+send its process ID (PID) to clients for displaying along with the file contents or with the
+message.
+
+\section*{Algorithm}
+
+\subsection*{Server Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create a socket (socket()) for IPv4 and TCP communication.
+	\item Bind the socket (bind()) to a specific IP address and port number.
+	\item Listen (listen()) on the socket for incoming client connection requests.
+	\item Repeat indefinitely (Main Loop):
+	\begin{enumerate}
+		\item Accept (accept()) an incoming connection from a client, generating a new connected socket descriptor.
+		\item Fork (fork()) a new child process:
+		\begin{itemize}
+			\item If fork() $= 0$ (Child Process):
+			\begin{enumerate}
+				\item Close the listening socket descriptor in the child (not needed for communication).
+				\item Receive the requested filename string sent by the client.
+				\item Obtain the current process ID using getpid().
+				\item Check if the requested file exists in the server directory (e.g., using access() or fopen()).
+				\item If the file exists:
+				\begin{itemize}
+					\item Send a success status or file existence confirmation along with the server PID.
+					\item Read the file contents block by block and send them to the client.
+					\item Close the file.
+				\end{itemize}
+				\item If the file does not exist:
+				\begin{itemize}
+					\item Send an appropriate error message (``File not found'') along with the server PID.
+				\end{itemize}
+				\item Close the connected client socket and exit the child process.
+			\end{enumerate}
+			\item If fork() $> 0$ (Parent Process):
+			\begin{enumerate}
+				\item Close the connected socket descriptor in the parent.
+				\item Loop back to accept the next client connection (concurrent handling).
+			\end{enumerate}
+		\end{itemize}
+	\end{enumerate}
+	\item Close the server socket.
+	\item Stop.
+\end{enumerate}
+
+\subsection*{Client Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create a socket (socket()) for TCP communication.
+	\item Connect (connect()) to the server using the server's IP address and port number.
+	\item Prompt the user to enter the name of the file they want to request.
+	\item Send the filename string to the server over the socket connection.
+	\item Receive data from the server:
+	\begin{itemize}
+		\item Receive and display the server's Process ID (PID).
+		\item Receive and display the status message or the contents of the requested file stream.
+	\end{itemize}
+	\item Close the socket connection.
+	\item Stop.
+\end{enumerate}
+
+\section*{Program}
+
+\subsection*{Server}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q9_Server.c"}
+
+\subsection*{Client}
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q9_Client.c"}
+
+
+\vspace{0.5cm}
+
+\section*{Output}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/9_3"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/9_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/9_2"}
+\end{figure}
+
+
+\section*{Result}
+
+The program was executed and verified successfully.
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 10 \hfill 03/09/2026
+\end{center}
+\label{exp:10}
+\begin{center}
+	{\bfseries \Huge Packet Capturing Using Raw Sockets \par}
+\end{center}
+
+\section*{Aim}
+
+Develop a packet-capturing application using raw sockets.
+
+\section*{Algorithm}
+\begin{enumerate}
+	\item Start.
+	\item Create a raw socket using socket() with the address family AF\_PACKET, socket type SOCK\_RAW and protocol ETH\_P\_ALL (converted with htons()). This receives all incoming and outgoing Ethernet frames at the link layer. If socket creation fails, print an error message and stop.
+	\item Allocate a buffer of 65536 bytes in memory to hold the captured packets. If the allocation fails, print an error message, close the socket and stop.
+	\item Display a message indicating that packet capture has started and that Ctrl+C can be pressed to stop it.
+	\item Enter an infinite loop to capture packets continuously:
+	\begin{itemize}
+		\item Receive a packet into the buffer using recvfrom().
+		\item If recvfrom() returns an error, print an error message and exit the loop.
+		\item Otherwise, pass the received packet and its size to the packet processing function.
+	\end{itemize}
+	\item Process each received packet as follows:
+	\begin{itemize}
+		\item Treat the first 14 bytes of the buffer as the Ethernet header.
+		\item Print the Ethernet header details: the destination MAC address (bytes 0--5), the source MAC address (bytes 6--11) and the protocol type (bytes 12--13) in hexadecimal.
+		\item If the protocol type is 0x0800 (IPv4), treat the data immediately after the Ethernet header as the IP header. Otherwise, skip the IP header details.
+		\item Print the IP header details: the IP version, the protocol number along with its name (TCP for 6, UDP for 17, ICMP for 1, and Other for any other value), the source IP address and the destination IP address.
+		\item Print a separator line after each packet.
+	\end{itemize}
+	\item Return to the capture loop to receive the next packet.
+	\item When the loop ends, free the buffer and close the raw socket.
+	\item Stop.
+\end{enumerate}
+\vspace{-0.9cm}
+
+\section*{Program}
+
+\lstinputlisting[language=c]{"../Auxiliary Files/cn_outputs/programs/Q10_Capture.c"}
+
+\newpage
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/10"}
+\end{figure}
+
+\section*{Result}
+\vspace{-0.2cm}
+The program was executed and verified successfully.
+
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 11 \hfill 22/09/2026
+\end{center}
+\label{exp:11}
+\begin{center}
+	{\bfseries \Huge Familiarization With Cisco Packet Tracer \par}
+\end{center}
+
+
+
+\section*{Aim}
+To familiarize with basic Cisco IOS router commands in Cisco Packet Tracer:
+\begin{enumerate}
+	\item[(a)] Knowing the current mode (user or privileged), switching to privileged mode.
+	\item[(b)] Switching to configuration mode.
+	\item[(c)] Obtaining router information such as type, OS, memory stats, interface details, etc.
+	\item[(d)] Viewing the status of any routing protocols currently configured.
+	\item[(e)] Showing the routing table.
+	\item[(f)] Saving the running configuration.
+	\item[(g)] Viewing the command history.
+	\item[(h)] Viewing the router clock.
+	\item[(i)] Viewing the list of hosts.
+	\item[(j)] Displaying the statistics for all the interfaces (both detailed and brief views).
+	\item[(k)] Knowing the controller type (DTE or DCE).
+	\item[(l)] Configuring serial and Ethernet interfaces: enabling the interface, setting IP address, subnet mask, and clock rate.
+\end{enumerate}
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item Cisco 1841 Router
+	\item Serial DCE/DTE and Copper Straight-Through Cables
+\end{itemize}
+
+\section*{Theory}
+Cisco routers run the Internetwork Operating System (IOS), which provides a Command Line Interface (CLI) divided into hierarchical command modes for security and administration:
+\begin{itemize}
+	\item \textbf{User EXEC Mode (\texttt{Router>}):} Allows limited examination of router status without modifying configurations.
+	\item \textbf{Privileged EXEC Mode (\texttt{Router\#}):} Provides access to all diagnostic, inspection, and configuration management commands.
+	\item \textbf{Global Configuration Mode (\texttt{Router(config)\#}):} Used to modify system-wide router parameters.
+	\item \textbf{Interface Configuration Mode (\texttt{Router(config-if)\#}):} Used to configure specific router interfaces such as FastEthernet and Serial ports.
+\end{itemize}
+
+\section*{Router Commands and Configuration}
+
+\subsection*{(a) Knowing the Current Mode and Switching to Privileged Mode}
+The prompt \texttt{Router>} indicates User EXEC mode, while \texttt{Router\#} indicates Privileged EXEC mode.
+\begin{lstlisting}
+Router> enable
+Router#
+\end{lstlisting}
+
+\subsection*{(b) Switching to Configuration Mode}
+\begin{lstlisting}
+Router# configure terminal
+Router(config)# exit
+Router#
+\end{lstlisting}
+
+\subsection*{(c) Obtaining Router Information (Type, OS, Memory, Interfaces)}
+\begin{lstlisting}
+Router# show version
+\end{lstlisting}
+The output shows a Cisco 1841 router running IOS 12.4(15)T1, with 114688K/16384K bytes of memory, 2 FastEthernet interfaces, 4 low-speed serial interfaces, 191K bytes of NVRAM and 63488K bytes of CompactFlash.
+
+\subsection*{(d) Viewing the Status of Configured Routing Protocols}
+\begin{lstlisting}
+Router# show ip protocols
+\end{lstlisting}
+The router is running RIP (version 2) for the network 172.16.0.0, with updates sent every 30 seconds.
+
+\subsection*{(e) Showing the Routing Table}
+\begin{lstlisting}
+Router# show ip route
+\end{lstlisting}
+
+\subsection*{(f) Saving the Running Configuration}
+\begin{lstlisting}
+Router# copy running-config startup-config
+! Alternative command with the same effect:
+Router# write memory
+\end{lstlisting}
+
+\subsection*{(g) Viewing the Command History}
+\begin{lstlisting}
+Router# show history
+\end{lstlisting}
+
+\subsection*{(h) Viewing the Router Clock}
+\begin{lstlisting}
+Router# show clock
+\end{lstlisting}
+
+\subsection*{(i) Viewing the List of Hosts}
+\begin{lstlisting}
+Router# show hosts
+\end{lstlisting}
+
+\subsection*{(j) Displaying Statistics for All Interfaces (Detailed and Brief)}
+\begin{lstlisting}
+Router# show interfaces
+Router# show interfaces fastethernet 0/0
+Router# show ip interface brief
+\end{lstlisting}
+
+\subsection*{(k) Knowing the Controller Type (DTE or DCE)}
+\begin{lstlisting}
+Router# show controllers serial 0/0/0
+\end{lstlisting}
+The output reports \texttt{DTE V.35 TX and RX clocks detected}, so Serial0/0/0 is the DTE end of its link and does not need a clock rate.
+
+\subsection*{(l) Configuring Serial and Ethernet Interfaces}
+\begin{lstlisting}
+Router> enable
+Router# configure terminal
+
+! Configuring FastEthernet Interface
+Router(config)# interface fastethernet 0/0
+Router(config-if)# ip address 172.16.30.1 255.255.255.0
+Router(config-if)# no shutdown
+
+! Configuring Serial Interface (DCE end)
+Router(config-if)# interface serial 0/0/1
+Router(config-if)# ip address 172.16.40.1 255.255.255.0
+Router(config-if)# clock rate 64000
+Router(config-if)# no shutdown
+Router(config-if)# end
+\end{lstlisting}
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_6"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_5"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_4"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_3"}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_1"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/11_2"}
+\end{figure}
+
+\section*{Result}
+The basic Cisco IOS router commands and interface configuration steps were executed and verified successfully.
+
+
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 12 \hfill 08/10/2026
+\end{center}
+\label{exp:12}
+\begin{center}
+	{\bfseries \Huge Static Routing \par}
+\end{center}
+
+\section*{Aim}
+To set up static routing for the given network topology, display the routing table, and verify end-to-end connectivity using the \texttt{ping} command.
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item One Cisco \texttt{2621XM} router and four Cisco \texttt{1841} routers
+	\item One PC 
+	\item Copper cross-over cables
+	\item Serial DCE/DTE cables
+\end{itemize}
+
+\section*{Theory}
+Static routing is a form of routing that occurs when a router uses a manually configured routing entry, rather than information from dynamic routing traffic. Network administrators manually configure static routes in a router's routing table using the global configuration command:
+\begin{center}
+	\texttt{ip route <destination-network> <subnet-mask> <next-hop-ip-address>}
+\end{center}
+Routes configured statically are denoted by the code \textbf{\texttt{S}} in the routing table and have a default Administrative Distance (AD) of \textbf{1}.
+
+\section*{Network Topology}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/12_1"}
+\end{figure}
+
+
+\section*{IP Address Allocation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{IP Address} & \textbf{Subnet Mask} \\ \hline
+		Router3 (2621XM) & FastEthernet0/0   & 172.16.10.1  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & FastEthernet0/0   & 172.16.10.2  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/0 (DCE) & 172.16.20.1  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/1 (DCE) & 172.16.60.1  & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/0 (DTE) & 172.16.20.2  & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/1 (DCE) & 172.16.40.1  & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/0 (DTE) & 172.16.40.2  & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/1 (DTE) & 172.16.70.2  & 255.255.255.0 \\ \hline
+		Router2 (1841)   & FastEthernet0/0   & 172.16.30.1  & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/0 (DTE) & 172.16.60.2  & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/1 (DCE) & 172.16.70.1  & 255.255.255.0 \\ \hline
+		PC1 (PC-PT)      & FastEthernet0     & 172.16.30.10 & 255.255.255.0 \\ \hline
+	\end{tabular}
+	\caption{IP Address Allocation}
+\end{table}
+
+\section*{Network Addresses}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Network} & \textbf{Network Address} \\ \hline
+		Router3 -- Router0 & 172.16.10.0/24 \\ \hline
+		Router0 -- Router1 & 172.16.20.0/24 \\ \hline
+		Router1 -- Router2 & 172.16.40.0/24 \\ \hline
+		Router0 -- Router4 & 172.16.60.0/24 \\ \hline
+		Router4 -- Router2 & 172.16.70.0/24 \\ \hline
+		Router2 -- PC1     & 172.16.30.0/24 \\ \hline
+	\end{tabular}
+	\caption{Network Addresses}
+\end{table}
+
+\section*{Connectivity}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{Connected Device} & \textbf{Interface} \\ \hline
+		Router3 & FastEthernet0/0   & Router0 & FastEthernet0/0   \\ \hline
+		Router0 & Serial0/0/0 (DCE) & Router1 & Serial0/0/0 (DTE) \\ \hline
+		Router0 & Serial0/0/1 (DCE) & Router4 & Serial0/1/0 (DTE) \\ \hline
+		Router1 & Serial0/0/1 (DCE) & Router2 & Serial0/0/0 (DTE) \\ \hline
+		Router4 & Serial0/1/1 (DCE) & Router2 & Serial0/0/1 (DTE) \\ \hline
+		Router2 & FastEthernet0/0   & PC1     & FastEthernet0     \\ \hline
+	\end{tabular}
+	\caption{Network Connectivity}
+\end{table}
+
+\section*{Procedure}
+\begin{enumerate}
+	\item Connect the five routers (\texttt{Router3}, \texttt{Router0}, \texttt{Router1}, \texttt{Router2}, \texttt{Router4}) and \texttt{PC1} according to the given topology.
+	\item Assign IP addresses and subnet masks to all router interfaces.
+	\item Configure the DCE serial interfaces with a clock rate of \texttt{64000}.
+	\item Enable all required router interfaces using \texttt{no shutdown}.
+	\item Configure the IP address (\texttt{172.16.30.10}), subnet mask (\texttt{255.255.255.0}), and default gateway (\texttt{172.16.30.1}) on \texttt{PC1}.
+	\item Verify interface statuses using \texttt{show ip interface brief}.
+	\item Configure static routes on the routers to reach the remote networks using the \texttt{ip route} command.
+	\item Display the routing table on the router using \texttt{show ip route}.
+	\item Verify end-to-end connectivity across the network using the \texttt{ping} command.
+\end{enumerate}
+
+\section*{Configuration}
+
+\subsection*{Interface Configuration}
+\textbf{Router3 (2621XM)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.10.1 255.255.255.0
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router0 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.10.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/0
+ip address 172.16.20.1 255.255.255.0
+clock rate 64000
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.60.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router1 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/0/0
+ip address 172.16.20.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.40.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router2 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/0/0
+ip address 172.16.40.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.70.2 255.255.255.0
+no shutdown
+exit
+interface fastethernet0/0
+ip address 172.16.30.1 255.255.255.0
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router4 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/1/0
+ip address 172.16.60.2 255.255.255.0
+no shutdown
+exit
+interface serial0/1/1
+ip address 172.16.70.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\subsection*{Static Route Configuration}
+\textbf{Router3 (2621XM)}
+\begin{lstlisting}
+enable
+configure terminal
+ip route 172.16.20.0 255.255.255.0 172.16.10.2
+ip route 172.16.30.0 255.255.255.0 172.16.10.2
+ip route 172.16.40.0 255.255.255.0 172.16.10.2
+end
+\end{lstlisting}
+
+\textbf{Router0 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+ip route 172.16.30.0 255.255.255.0 172.16.20.2
+ip route 172.16.40.0 255.255.255.0 172.16.20.2
+ip route 172.16.70.0 255.255.255.0 172.16.60.2
+end
+\end{lstlisting}
+
+\textbf{Router1 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+ip route 172.16.10.0 255.255.255.0 172.16.20.1
+ip route 172.16.30.0 255.255.255.0 172.16.40.2
+end
+\end{lstlisting}
+
+\textbf{Router4 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+ip route 172.16.10.0 255.255.255.0 172.16.60.1
+ip route 172.16.30.0 255.255.255.0 172.16.70.2
+end
+\end{lstlisting}
+
+\textbf{Router2 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+ip route 172.16.10.0 255.255.255.0 172.16.40.1
+ip route 172.16.20.0 255.255.255.0 172.16.40.1
+ip route 172.16.60.0 255.255.255.0 172.16.70.1
+end
+\end{lstlisting}
+
+\section*{Verification}
+\subsection*{Routing Table Verification}
+On \texttt{Router3}, display the routing table using:
+\begin{lstlisting}
+	show ip route
+\end{lstlisting}
+Static routes are indicated by the letter \textbf{\texttt{S}} in the routing table:
+\begin{itemize}
+	\item \texttt{S 172.16.20.0 [1/0] via 172.16.10.2}
+	\item \texttt{S 172.16.30.0 [1/0] via 172.16.10.2}
+	\item \texttt{S 172.16.40.0 [1/0] via 172.16.10.2}
+\end{itemize}
+
+\subsection*{Connectivity Verification}
+\begin{lstlisting}
+! From PC1:
+C:\> ping 172.16.30.1
+C:\> ping 172.16.10.1
+C:\> ping 172.16.40.2
+\end{lstlisting}
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/12_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/12_3"}
+\end{figure}
+
+
+\section*{Result}
+Static routing was successfully configured on all routers, the routing tables were displayed, and end-to-end connectivity between all networks was verified using \texttt{ping}.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 13 \hfill 15/10/2026
+\end{center}
+\label{exp:13}
+\begin{center}
+	{\bfseries \Huge RIPv2 Routing \par}
+\end{center}
+
+
+\section*{Aim}
+To configure RIPv2 (Routing Information Protocol Version 2) on the routers and verify connectivity using the routing table and \texttt{ping} commands.
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item One Cisco \texttt{2621XM} router and four Cisco \texttt{1841} routers
+	\item Two PCs 
+	\item Copper cross-over cables
+	\item Serial DCE/DTE cables
+\end{itemize}
+
+\section*{Theory}
+RIPv2 is a dynamic distance-vector routing protocol used by routers to exchange routing information and automatically learn routes to remote networks. RIP uses \textbf{hop count} as its routing metric (maximum 15 hops).
+
+RIPv2 is enabled using the \texttt{version 2} command. The \texttt{no auto-summary} command disables automatic classful route summarization. The \texttt{network} command specifies the classful network addresses on which RIP operates.
+
+Routes learned through RIP are identified by the letter \textbf{\texttt{R}} in the routing table. RIP has an Administrative Distance of \textbf{120}.
+
+\section*{Network Topology}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/13_1"}
+\end{figure}
+
+\section*{IP Address Allocation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{IP Address} & \textbf{Subnet Mask} \\ \hline
+		Router3 (2621XM) & FastEthernet0/0   & 172.16.10.1 & 255.255.255.0 \\ \hline
+		Router0 (1841)   & FastEthernet0/0   & 172.16.10.2 & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/0 (DCE) & 172.16.20.1 & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/1 (DCE) & 172.16.60.1 & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/0 (DTE) & 172.16.20.2 & 255.255.255.0 \\ \hline
+		Router1 (1841)   & FastEthernet0/0   & 172.16.30.1 & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/1 (DCE) & 172.16.40.1 & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/0 (DTE) & 172.16.40.2 & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/1 (DTE) & 172.16.70.2 & 255.255.255.0 \\ \hline
+		Router2 (1841)   & FastEthernet0/0   & 172.16.50.1 & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/0 (DTE) & 172.16.60.2 & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/1 (DCE) & 172.16.70.1 & 255.255.255.0 \\ \hline
+		PC0 (PC-PT)      & FastEthernet0     & 172.16.30.2 & 255.255.255.0 \\ \hline
+		PC1 (PC-PT)      & FastEthernet0     & 172.16.50.2 & 255.255.255.0 \\ \hline
+	\end{tabular}
+	\caption{IP Address Allocation}
+\end{table}
+
+\section*{Network Addresses}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Network} & \textbf{Network Address} \\ \hline
+		Router3 -- Router0 & 172.16.10.0/24 \\ \hline
+		Router0 -- Router1 & 172.16.20.0/24 \\ \hline
+		Router1 -- PC0     & 172.16.30.0/24 \\ \hline
+		Router1 -- Router2 & 172.16.40.0/24 \\ \hline
+		Router2 -- PC1     & 172.16.50.0/24 \\ \hline
+		Router0 -- Router4 & 172.16.60.0/24 \\ \hline
+		Router4 -- Router2 & 172.16.70.0/24 \\ \hline
+	\end{tabular}
+	\caption{Network Addresses}
+\end{table}
+
+\section*{Connectivity}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{Connected Device} & \textbf{Interface} \\ \hline
+		Router3 & FastEthernet0/0   & Router0 & FastEthernet0/0   \\ \hline
+		Router0 & Serial0/0/0 (DCE) & Router1 & Serial0/0/0 (DTE) \\ \hline
+		Router0 & Serial0/0/1 (DCE) & Router4 & Serial0/1/0 (DTE) \\ \hline
+		Router1 & FastEthernet0/0   & PC0     & FastEthernet0     \\ \hline
+		Router1 & Serial0/0/1 (DCE) & Router2 & Serial0/0/0 (DTE) \\ \hline
+		Router4 & Serial0/1/1 (DCE) & Router2 & Serial0/0/1 (DTE) \\ \hline
+		Router2 & FastEthernet0/0   & PC1     & FastEthernet0     \\ \hline
+	\end{tabular}
+	\caption{Network Connectivity}
+\end{table}
+
+\section*{Procedure}
+\begin{enumerate}
+	\item Connect the five routers (\texttt{Router3}, \texttt{Router0}, \texttt{Router1}, \texttt{Router2}, \texttt{Router4}) and two PCs (\texttt{PC0}, \texttt{PC1}) according to the given topology.
+	\item Assign IP addresses and subnet masks to all router interfaces.
+	\item Configure the DCE serial interfaces with a clock rate of \texttt{64000}.
+	\item Enable all required router interfaces using \texttt{no shutdown}.
+	\item Configure the IP addresses, subnet masks, and default gateways on \texttt{PC0} and \texttt{PC1}.
+	\item Verify the interface status using \texttt{show ip interface brief}.
+	\item Configure RIPv2 on all routers using \texttt{router rip}, \texttt{version 2}, \texttt{no auto-summary}, and \texttt{network} statements.
+	\item Verify the RIP configuration using \texttt{show ip protocols}.
+	\item Display the routing table using \texttt{show ip route}.
+	\item Verify end-to-end connectivity using the \texttt{ping} command.
+\end{enumerate}
+
+\section*{Configuration}
+
+\subsection*{Interface Configuration}
+\textbf{Router3 (2621XM)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.10.1 255.255.255.0
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router0 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.10.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/0
+ip address 172.16.20.1 255.255.255.0
+clock rate 64000
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.60.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router1 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/0/0
+ip address 172.16.20.2 255.255.255.0
+no shutdown
+exit
+interface fastethernet0/0
+ip address 172.16.30.1 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.40.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router2 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/0/0
+ip address 172.16.40.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.70.2 255.255.255.0
+no shutdown
+exit
+interface fastethernet0/0
+ip address 172.16.50.1 255.255.255.0
+no shutdown
+end
+\end{lstlisting}
+
+\textbf{Router4 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+interface serial0/1/0
+ip address 172.16.60.2 255.255.255.0
+no shutdown
+exit
+interface serial0/1/1
+ip address 172.16.70.1 255.255.255.0
+clock rate 64000
+no shutdown
+end
+\end{lstlisting}
+
+\subsection*{PC Configuration}
+\begin{itemize}
+\item \textbf{PC0:} IP Address: \texttt{172.16.30.2}, Subnet Mask: \texttt{255.255.255.0}, Default Gateway: \texttt{172.16.30.1}
+\item \textbf{PC1:} IP Address: \texttt{172.16.50.2}, Subnet Mask: \texttt{255.255.255.0}, Default Gateway: \texttt{172.16.50.1}
+\end{itemize}
+
+\subsection*{RIPv2 Configuration}
+\textbf{Router3 (2621XM)}
+\begin{lstlisting}
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 172.16.10.0
+end
+\end{lstlisting}
+
+\textbf{Router0 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 172.16.10.0
+network 172.16.20.0
+network 172.16.60.0
+end
+\end{lstlisting}
+
+\textbf{Router1 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 172.16.20.0
+network 172.16.30.0
+network 172.16.40.0
+end
+\end{lstlisting}
+
+\textbf{Router2 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 172.16.40.0
+network 172.16.50.0
+network 172.16.70.0
+end
+\end{lstlisting}
+
+\textbf{Router4 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 172.16.60.0
+network 172.16.70.0
+end
+\end{lstlisting}
+
+\section*{Verification}
+\subsection*{RIP Verification}
+On \texttt{Router3}, verify the RIP configuration and routing table using:
+\begin{lstlisting}
+show ip protocols
+show ip route
+\end{lstlisting}
+RIP-learned routes are indicated by the letter \textbf{\texttt{R}} in the routing table:
+\begin{itemize}
+	\item \texttt{R 172.16.20.0 [120/1] via 172.16.10.2}
+	\item \texttt{R 172.16.30.0 [120/2] via 172.16.10.2}
+	\item \texttt{R 172.16.40.0 [120/2] via 172.16.10.2}
+	\item \texttt{R 172.16.50.0 [120/3] via 172.16.10.2}
+	\item \texttt{R 172.16.60.0 [120/1] via 172.16.10.2}
+	\item \texttt{R 172.16.70.0 [120/2] via 172.16.10.2}
+\end{itemize}
+
+\subsection*{Connectivity Verification}
+\begin{lstlisting}
+! From PC0:
+C:\> ping 172.16.10.2
+C:\> ping 172.16.60.1
+\end{lstlisting}
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/13_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/13_3"}
+\end{figure}
+
+\section*{Result}
+RIPv2 was successfully configured on all routers. The routers dynamically learned the remote networks through RIPv2, and connectivity between the networks was successfully verified using the routing table and \texttt{ping} commands.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 14 \hfill 15/10/2026
+\end{center}
+\label{exp:14}
+\begin{center}
+	{\bfseries \Huge OSPF Routing \par}
+\end{center}
+
+
+\section*{Aim}
+To implement OSPF (Open Shortest Path First) routing for the given network topology, display the routing table, and verify connectivity using the \texttt{ping} command.
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item One Cisco \texttt{2621XM} router and four Cisco \texttt{1841} routers 
+	\item One PC 
+	\item Copper cross-over cables
+	\item Serial DCE/DTE cables
+\end{itemize}
+
+\section*{Theory}
+OSPF (Open Shortest Path First) is an interior gateway, link-state dynamic routing protocol that uses Dijkstra's Shortest Path First (SPF) algorithm to compute the shortest path tree to all known destinations. OSPF uses \textbf{cost} (inversely proportional to interface bandwidth) as its routing metric.
+
+OSPF is enabled using the \texttt{router ospf <process-id>} command, and participating interfaces are advertised using:
+\begin{center}
+	\texttt{network <network-address> <wildcard-mask> area <area-id>}
+\end{center}
+Routes learned via OSPF are identified by the letter \textbf{\texttt{O}} in the routing table and have an Administrative Distance of \textbf{110}.
+
+\section*{Network Topology}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{"../Auxiliary Files/cn_outputs/14_1"}
+\end{figure}
+
+
+\section*{IP Address Allocation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{IP Address} & \textbf{Subnet Mask} \\ \hline
+		Router3 (2621XM) & FastEthernet0/0   & 172.16.10.1  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & FastEthernet0/0   & 172.16.10.2  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/0 (DCE) & 172.16.20.1  & 255.255.255.0 \\ \hline
+		Router0 (1841)   & Serial0/0/1 (DCE) & 172.16.60.1  & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/0 (DTE) & 172.16.20.2  & 255.255.255.0 \\ \hline
+		Router1 (1841)   & FastEthernet0/0   & 172.16.30.1  & 255.255.255.0 \\ \hline
+		Router1 (1841)   & Serial0/0/1 (DCE) & 172.16.40.1  & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/0 (DTE) & 172.16.40.2  & 255.255.255.0 \\ \hline
+		Router2 (1841)   & Serial0/0/1 (DTE) & 172.16.70.2  & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/0 (DTE) & 172.16.60.2  & 255.255.255.0 \\ \hline
+		Router4 (1841)   & Serial0/1/1 (DCE) & 172.16.70.1  & 255.255.255.0 \\ \hline
+		PC0 (PC-PT)      & FastEthernet0     & 172.16.30.10 & 255.255.255.0 \\ \hline
+	\end{tabular}
+	\caption{IP Address Allocation}
+\end{table}
+
+\section*{Network Addresses}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Network} & \textbf{Network Address} \\ \hline
+		Router3 -- Router0 & 172.16.10.0/24 \\ \hline
+		Router0 -- Router1 & 172.16.20.0/24 \\ \hline
+		Router1 -- PC0     & 172.16.30.0/24 \\ \hline
+		Router1 -- Router2 & 172.16.40.0/24 \\ \hline
+		Router0 -- Router4 & 172.16.60.0/24 \\ \hline
+		Router4 -- Router2 & 172.16.70.0/24 \\ \hline
+	\end{tabular}
+	\caption{Network Addresses}
+\end{table}
+
+\section*{Procedure}
+\begin{enumerate}
+	\item Connect the five routers (\texttt{Router3}, \texttt{Router0}, \texttt{Router1}, \texttt{Router2}, \texttt{Router4}) and \texttt{PC0} according to the given topology.
+	\item Assign IP addresses and subnet masks to all router interfaces and enable them using \texttt{no shutdown}.
+	\item Configure the DCE serial interfaces with a clock rate of \texttt{64000}.
+	\item Configure the IP address (\texttt{172.16.30.10}), subnet mask (\texttt{255.255.255.0}), and default gateway (\texttt{172.16.30.1}) on \texttt{PC0}.
+	\item Configure single-area OSPF (Process ID \texttt{1}, Area \texttt{0}) on all five routers using the respective network addresses and wildcard masks (\texttt{0.0.0.255}).
+	\item Verify OSPF neighbor adjacencies using \texttt{show ip ospf neighbor}.
+	\item Display the routing table using \texttt{show ip route} and observe the OSPF routes (\texttt{O}) and calculated path costs.
+	\item Verify end-to-end connectivity across the subnets using the \texttt{ping} command.
+\end{enumerate}
+
+\section*{Configuration}
+
+\subsection*{OSPF Configuration}
+\textbf{Router3 (2621XM)}
+\begin{lstlisting}
+enable
+configure terminal
+router ospf 1
+router-id 1.1.1.1
+network 172.16.10.0 0.0.0.255 area 0
+end
+\end{lstlisting}
+
+\textbf{Router0 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router ospf 1
+router-id 2.2.2.2
+network 172.16.10.0 0.0.0.255 area 0
+network 172.16.20.0 0.0.0.255 area 0
+network 172.16.60.0 0.0.0.255 area 0
+end
+\end{lstlisting}
+
+\textbf{Router1 (1841)}
+\begin{lstlisting}
+enable
+configure terminal
+router ospf 1
+router-id 3.3.3.3
+network 172.16.20.0 0.0.0.255 area 0
+network 172.16.30.0 0.0.0.255 area 0
+network 172.16.40.0 0.0.0.255 area 0
+end
+\end{lstlisting}
+
+\textbf{Router2 (1841)}
+\begin{lstlisting}
+	enable
+	configure terminal
+	router ospf 1
+	router-id 4.4.4.4
+	network 172.16.40.0 0.0.0.255 area 0
+	network 172.16.70.0 0.0.0.255 area 0
+	end
+\end{lstlisting}
+
+\textbf{Router4 (1841)}
+\begin{lstlisting}
+	enable
+	configure terminal
+	router ospf 1
+	router-id 5.5.5.5
+	network 172.16.60.0 0.0.0.255 area 0
+	network 172.16.70.0 0.0.0.255 area 0
+	end
+\end{lstlisting}
+
+\section*{Verification}
+\subsection*{OSPF Verification}
+On \texttt{Router3}, verify the OSPF neighbor table and routing table using:
+\begin{lstlisting}
+	show ip ospf neighbor
+	show ip route
+\end{lstlisting}
+OSPF-learned routes are indicated by the letter \textbf{\texttt{O}} in the routing table:
+\begin{itemize}
+	\item \texttt{O 172.16.20.0 [110/65] via 172.16.10.2}
+	\item \texttt{O 172.16.30.0 [110/66] via 172.16.10.2}
+	\item \texttt{O 172.16.40.0 [110/129] via 172.16.10.2}
+	\item \texttt{O 172.16.60.0 [110/65] via 172.16.10.2}
+	\item \texttt{O 172.16.70.0 [110/129] via 172.16.10.2}
+\end{itemize}
+
+\subsection*{Connectivity Verification}
+\begin{lstlisting}
+! From PC0:
+C:\> ping 172.16.70.0
+C:\> ping 172.16.30.0
+\end{lstlisting}
+
+\section*{Output}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/14_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{"../Auxiliary Files/cn_outputs/14_3"}
+\end{figure}
+
+\section*{Result}
+OSPF routing was successfully configured on all routers, the routing tables and OSPF neighbor states were displayed, and end-to-end connectivity across the network was verified using \texttt{ping}.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 15 \hfill 15/10/2026
+\end{center}
+\label{exp:15}
+\begin{center}
+	{\bfseries \Huge Standard Access Control List (ACL) \par}
+\end{center}
+
+\section*{Aim}
+You are the network administrator of your college. For the given campus network topology, configure an Access Control List (ACL) to allow only \texttt{Host\_B} (\texttt{172.16.30.2}) to communicate with the \texttt{Lab\_A} network, and verify the settings by:
+\begin{enumerate}
+	\item[(a)] Pinging \texttt{Host\_A} from \texttt{Host\_B}
+	\item[(b)] Pinging \texttt{Host\_A} from \texttt{Lab\_B} and \texttt{Lab\_C}
+\end{enumerate}
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item Cisco \texttt{1841} and \texttt{2621XM} Routers 
+	\item Three Cisco \texttt{2950-24} Switches
+	\item Three PCs and Two Laptops
+	\item Copper straight-through, cross-over, and Serial DCE/DTE cables
+\end{itemize}
+
+\section*{Theory}
+An Access Control List (ACL) is a sequential list of permit or deny statements that filter network traffic based on packet header attributes.
+\begin{itemize}
+	\item \textbf{Standard ACLs (numbered 1--99):} Filter packets based solely on the \textbf{source IPv4 address}. They are placed as close to the destination as possible.
+	\item Every ACL ends with an implicit \texttt{deny any} statement.
+	\item Standard ACL syntax:
+	\begin{center}
+		\texttt{access-list <1-99> \{permit | deny\} <source-ip> [wildcard-mask]}
+	\end{center}
+	\item Applied to an interface using:
+	\begin{center}
+		\texttt{ip access-group <acl-number> \{in | out\}}
+	\end{center}
+\end{itemize}
+
+\section*{Network Topology}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/15_1"}
+\end{figure}
+
+\section*{IP Address Allocation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{IP Address} & \textbf{Subnet Mask} & \textbf{Default Gateway} \\ \hline
+		Router3 (2621XM)   & FastEthernet0/0   & 172.16.10.1 & 255.255.255.0 & --          \\ \hline
+		Router0 (Lab\_A)   & FastEthernet0/0   & 172.16.10.2 & 255.255.255.0 & --          \\ \hline
+		Router0 (Lab\_A)   & FastEthernet0/1   & 172.16.80.1 & 255.255.255.0 & --          \\ \hline
+		Router0 (Lab\_A)   & Serial0/0/1 (DCE) & 172.16.20.1 & 255.255.255.0 & --          \\ \hline
+		Router1 (Lab\_B)   & FastEthernet0/0   & 172.16.30.1 & 255.255.255.0 & --          \\ \hline
+		Router1 (Lab\_B)   & Serial0/0/0 (DTE) & 172.16.20.2 & 255.255.255.0 & --          \\ \hline
+		Router1 (Lab\_B)   & Serial0/0/1 (DCE) & 172.16.40.1 & 255.255.255.0 & --          \\ \hline
+		Router2 (Lab\_C)   & FastEthernet0/0   & 172.16.50.1 & 255.255.255.0 & --          \\ \hline
+		Router2 (Lab\_C)   & Serial0/0/1 (DTE) & 172.16.40.2 & 255.255.255.0 & --          \\ \hline
+		PC2 (Host\_A)      & FastEthernet0     & 172.16.80.3 & 255.255.255.0 & 172.16.80.1 \\ \hline
+		PC0 (Host\_B)      & FastEthernet0     & 172.16.30.2 & 255.255.255.0 & 172.16.30.1 \\ \hline
+		Laptop0 (Lab\_B)   & FastEthernet0     & 172.16.30.3 & 255.255.255.0 & 172.16.30.1 \\ \hline
+		PC1 (Lab\_C)       & FastEthernet0     & 172.16.50.2 & 255.255.255.0 & 172.16.50.1 \\ \hline
+		Laptop1 (Lab\_C)   & FastEthernet0     & 172.16.50.3 & 255.255.255.0 & 172.16.50.1 \\ \hline
+	\end{tabular}
+	\caption{IP Address Allocation for Campus Network}
+\end{table}
+
+\section*{Procedure}
+\begin{enumerate}
+	\item Construct the campus network topology in Cisco Packet Tracer using routers, switches, PCs, and laptops as shown in the topology.
+	\item Configure IP addresses on all router interfaces, PCs, and laptops according to the IP Address Allocation table.
+	\item Configure dynamic routing (RIPv2) on all routers so that all subnets can communicate initially.
+	\item Create a Standard ACL (ACL \texttt{10}) on \texttt{Router0} (\texttt{Lab\_A}) that permits only \texttt{Host\_B} (\texttt{172.16.30.2}) and denies all other sources.
+	\item Bind ACL \texttt{10} outbound (\texttt{out}) on the LAN interface (\texttt{FastEthernet0/1} / \texttt{FastEthernet0/0}) of \texttt{Router0} (\texttt{Lab\_A}).
+	\item Test connectivity by pinging \texttt{Host\_A} (\texttt{172.16.80.3}) from \texttt{Host\_B} (\texttt{172.16.30.2}), and verify that pings from other devices in \texttt{Lab\_B} (\texttt{Laptop0} / \texttt{Router1}) and \texttt{Lab\_C} (\texttt{PC1} / \texttt{Laptop1} / \texttt{Router2}) are blocked.
+\end{enumerate}
+
+\section*{Configuration}
+
+\subsection*{Router Interface \& RIPv2 Configuration}
+\textbf{Router0 (Lab\_A)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.10.2 255.255.255.0
+no shutdown
+exit
+interface fastethernet0/1
+ip address 172.16.80.1 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.20.1 255.255.255.0
+clock rate 64000
+no shutdown
+exit
+router rip
+version 2
+no auto-summary
+network 172.16.10.0
+network 172.16.20.0
+network 172.16.80.0
+exit
+\end{lstlisting}
+
+\textbf{Router1 (Lab\_B)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.30.1 255.255.255.0
+no shutdown
+exit
+interface serial0/0/0
+ip address 172.16.20.2 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.40.1 255.255.255.0
+clock rate 64000
+no shutdown
+exit
+router rip
+version 2
+no auto-summary
+network 172.16.20.0
+network 172.16.30.0
+network 172.16.40.0
+end
+\end{lstlisting}
+
+\textbf{Router2 (Lab\_C)}
+\begin{lstlisting}
+enable
+configure terminal
+interface fastethernet0/0
+ip address 172.16.50.1 255.255.255.0
+no shutdown
+exit
+interface serial0/0/1
+ip address 172.16.40.2 255.255.255.0
+no shutdown
+exit
+router rip
+version 2
+no auto-summary
+network 172.16.40.0
+network 172.16.50.0
+end
+\end{lstlisting}
+
+\subsection*{Standard ACL Configuration on Router0 (Lab\_A)}
+\begin{lstlisting}
+enable
+configure terminal
+access-list 10 permit host 172.16.30.2
+access-list 10 deny any
+interface fastethernet0/1
+ip access-group 10 out
+exit
+interface fastethernet0/0
+ip access-group 10 out
+end
+\end{lstlisting}
+
+\section*{Verification}
+\begin{enumerate}
+\item[(a)] \textbf{Pinging \texttt{Host\_A} (\texttt{172.16.80.3}) from \texttt{Host\_B} (\texttt{172.16.30.2}):}
+\begin{lstlisting}
+C:\> ping 172.16.80.3
+! Result: Replies received successfully (Permitted by ACL 10).
+\end{lstlisting}
+\item[(b)] \textbf{Pinging \texttt{Host\_A} (\texttt{172.16.80.3}) from \texttt{Lab\_B} and \texttt{Lab\_C}:}
+\begin{lstlisting}
+! From Lab_B (Laptop0 172.16.30.3 or Router1):
+C:\> ping 172.16.80.3
+! Result: Destination host unreachable (Blocked by ACL 10)
+
+! From Lab_C (PC1 172.16.50.2 / Laptop1 172.16.50.3 or Router2):
+C:\> ping 172.16.80.3
+! Result: Destination host unreachable (Blocked by ACL 10)
+\end{lstlisting}
+\end{enumerate}
+
+\section*{Output}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/15_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/15_3"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/15_4"}
+\end{figure}
+
+
+\section*{Result}
+Standard ACL was successfully configured on \texttt{Lab\_A} (\texttt{Router0}) to permit only \texttt{Host\_B} (\texttt{172.16.30.2}) to communicate with \texttt{Lab\_A}, and verified by pinging \texttt{Host\_A} (\texttt{172.16.80.3}) from \texttt{Host\_B}, \texttt{Lab\_B}, and \texttt{Lab\_C}.
+
+
+\newpage 
+\begin{center}
+	\bfseries 
+	Experiment 16 \hfill 15/10/2026
+\end{center}
+\label{exp:16}
+\begin{center}
+	{\bfseries \Huge Subnetting and Extended ACL Configuration \par}
+\end{center}
+
+\section*{Aim}
+You are the network administrator of your college assigned the network address \texttt{140.80.0.0} with 20 subnets. The Central Computing Facility (CCF) resides in the 4th subnet, and the CSE Hackathon website is hosted on a server assigned the 7th address in the 16th subnet. Configure an Extended ACL to block students in CCF from accessing the hackathon website while allowing all other services on the server.
+
+\section*{Requirements}
+\begin{itemize}
+	\item Cisco Packet Tracer
+	\item One Cisco \texttt{1841} Router 
+	\item Two Cisco \texttt{2950-24} Switches
+	\item Three Laptops 
+	\item One Server 
+	\item Copper straight-through cables
+\end{itemize}
+
+\section*{Theory and Subnet Design}
+\subsection*{1. Subnetting Calculation}
+\begin{itemize}
+	\item \textbf{Given Network Address:} \texttt{140.80.0.0} (Class B, Default Subnet Mask: \texttt{255.255.0.0} or \texttt{/16})
+	\item \textbf{Required Number of Subnets:} $20$
+	\item \textbf{Number of Host Bits Borrowed ($n$):} Since $2^5 = 32 \ge 20$, we borrow $n = 5$ bits from the third octet.
+	\item \textbf{Custom Subnet Mask:} \texttt{/21} $\rightarrow$ \texttt{255.255.248.0} (Wildcard Mask: \texttt{0.0.7.255})
+	\item \textbf{Block Size in 3rd Octet:} $2^{8 - 5} = 2^3 = 8$
+\end{itemize}
+
+\subsection*{2. Subnet Address Identification}
+Using a block size of $8$ in the third octet (where the $k$th subnet starts at $k \times 8$):
+\begin{itemize}
+	\item \textbf{4th Subnet (CCF Subnet):} $4 \times 8 = 32 \rightarrow$ \texttt{140.80.32.0/21}
+	\item \textbf{16th Subnet (Admin / CSE Network):} $16 \times 8 = 128 \rightarrow$ \texttt{140.80.128.0/21}
+	\item \textbf{Hackathon Server (7th usable address in 16th Subnet):} \texttt{140.80.128.7}
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Subnet} & \textbf{Network Address} & \textbf{Usable Host IP Range} & \textbf{Broadcast Address} \\ \hline
+		1st Subnet          & 140.80.8.0/21   & 140.80.8.1 -- 140.80.15.254     & 140.80.15.255  \\ \hline
+		2nd Subnet          & 140.80.16.0/21  & 140.80.16.1 -- 140.80.23.254    & 140.80.23.255  \\ \hline
+		3rd Subnet          & 140.80.24.0/21  & 140.80.24.1 -- 140.80.31.254    & 140.80.31.255  \\ \hline
+		\textbf{4th (CCF)}  & \textbf{140.80.32.0/21}  & \textbf{140.80.32.1 -- 140.80.39.254}   & \textbf{140.80.39.255}  \\ \hline
+		\textbf{16th (CSE)} & \textbf{140.80.128.0/21} & \textbf{140.80.128.1 -- 140.80.135.254} & \textbf{140.80.135.255} \\ \hline
+	\end{tabular}
+	\caption{Subnet Allocation Table}
+\end{table}
+
+\subsection*{3. Extended ACL Theory}
+Extended ACLs (numbered \textbf{100--199}) filter traffic based on source IP, destination IP, protocol (\texttt{tcp}, \texttt{udp}, \texttt{icmp}, \texttt{ip}), and port number (e.g., port \texttt{80} / \texttt{www} for HTTP). Because they specify both source and destination addresses, they are placed as close to the source (\texttt{CCF Subnet}) as possible.
+
+\section*{Network Topology}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/16_1"}
+\end{figure}
+
+
+\section*{IP Address Allocation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{IP Address} & \textbf{Subnet Mask} & \textbf{Default Gateway} \\ \hline
+		Router0  & FastEthernet0/0 & 140.80.32.1  & 255.255.248.0 & --           \\ \hline
+		Router0  & FastEthernet0/1 & 140.80.128.1 & 255.255.248.0 & --           \\ \hline
+		Laptop0  & FastEthernet0   & 140.80.32.2  & 255.255.248.0 & 140.80.32.1  \\ \hline
+		Laptop1  & FastEthernet0   & 140.80.32.3  & 255.255.248.0 & 140.80.32.1  \\ \hline
+		Server0  & FastEthernet0   & 140.80.128.7 & 255.255.248.0 & 140.80.128.1 \\ \hline
+		admin-PC & FastEthernet0   & 140.80.128.2 & 255.255.248.0 & 140.80.128.1 \\ \hline
+	\end{tabular}
+	\caption{IP Address Allocation}
+\end{table}
+
+\section*{Connectivity}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Device} & \textbf{Interface} & \textbf{Connected Device} & \textbf{Interface} \\ \hline
+		Router0  & FastEthernet0/0 & Switch1 & FastEthernet0/1 \\ \hline
+		Switch1  & FastEthernet0/2 & Laptop1 & FastEthernet0   \\ \hline
+		Switch1  & FastEthernet0/3 & Laptop0 & FastEthernet0   \\ \hline
+		Router0  & FastEthernet0/1 & Switch0 & FastEthernet0/1 \\ \hline
+		Switch0  & FastEthernet0/2 & Server0 & FastEthernet0   \\ \hline
+		Switch0  & FastEthernet0/3 & admin-PC & FastEthernet0  \\ \hline
+	\end{tabular}
+	\caption{Network Connectivity}
+\end{table}
+
+\section*{Procedure}
+\begin{enumerate}
+	\item Calculate the subnet mask (\texttt{255.255.248.0}), the 4th subnet address for CCF (\texttt{140.80.32.0/21}), and the 7th host IP in the 16th subnet for the Hackathon Server (\texttt{140.80.128.7}).
+	\item Connect \texttt{Laptop0} and \texttt{Laptop1} (CCF) to \texttt{Router0} (\texttt{Fa0/0}) via \texttt{Switch1}, and connect \texttt{Server0} and \texttt{admin-PC} to \texttt{Router0} (\texttt{Fa0/1}) via \texttt{Switch0}.
+	\item Configure the router interfaces, laptops, and \texttt{Server0} with their respective IP addresses, \texttt{/21} subnet masks, and default gateways.
+	\item Ensure HTTP and other services (FTP/ICMP) are enabled on \texttt{Server0}.
+	\item Configure an Extended ACL (ACL \texttt{100}) on \texttt{Router0} to deny TCP port \texttt{80} (\texttt{www}) and port \texttt{443} traffic from the CCF subnet (\texttt{140.80.32.0 0.0.7.255}) to \texttt{Server0} (\texttt{host 140.80.128.7}), and permit all other IP traffic.
+	\item Apply ACL \texttt{100} inbound (\texttt{in}) on interface \texttt{FastEthernet0/0} of \texttt{Router0}.
+	\item Verify that accessing \texttt{http://140.80.128.7} from \texttt{Laptop0} or \texttt{Laptop1} is blocked (\texttt{Request Timeout}), while \texttt{ping 140.80.128.7} and web access from \texttt{admin-PC} succeed.
+\end{enumerate}
+
+\section*{Configuration}
+\textbf{Router0 Configuration}
+\begin{lstlisting}
+enable
+configure terminal
+
+! Interface connected to 4th Subnet (CCF Subnet)
+interface fastethernet0/0
+ip address 140.80.32.1 255.255.248.0
+no shutdown
+exit
+
+! Interface connected to 16th Subnet (Admin's Network / CSE Server)
+interface fastethernet0/1
+ip address 140.80.128.1 255.255.248.0
+no shutdown
+exit
+
+! Extended ACL 100 to block only HTTP/HTTPS access from CCF to Server0
+access-list 100 deny tcp 140.80.32.0 0.0.7.255 host 140.80.128.7 eq www
+access-list 100 deny tcp 140.80.32.0 0.0.7.255 host 140.80.128.7 eq 443
+access-list 100 permit ip any any
+
+! Apply ACL inbound on CCF interface (Fa0/0)
+interface fastethernet0/0
+ip access-group 100 in
+end
+\end{lstlisting}
+
+\section*{Verification}
+\begin{enumerate}
+	\item \textbf{Web Browser Check from CCF (\texttt{Laptop0} / \texttt{Laptop1}):}
+	Navigate to \texttt{http://140.80.128.7}. The request fails with \texttt{Request Timeout}, confirming website access from CCF is blocked.
+	\item \textbf{Other Services Check (ICMP / FTP) from CCF (\texttt{Laptop0} / \texttt{Laptop1}):}
+\begin{lstlisting}
+C:\> ping 140.80.128.7
+C:\> ftp 140.80.128.7
+\end{lstlisting}
+	Both ICMP echo replies and FTP connection succeed, confirming other services on \texttt{Server0} remain accessible.
+\end{enumerate}
+
+\section*{Output}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/16_2"}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Auxiliary Files/cn_outputs/16_3"}
+\end{figure}
+
+\section*{Result}
+The college network \texttt{140.80.0.0/16} was subnetted into \texttt{/21} subnets, and an Extended ACL was successfully configured on \texttt{Router0} to block HTTP website access from the CCF subnet (\texttt{140.80.32.0/21}) to the Hackathon Server (\texttt{140.80.128.7}) while allowing all other network services.
+
+
+
+\end{document} 
